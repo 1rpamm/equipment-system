@@ -1,0 +1,19 @@
+.page_header
+  %h2 История изменений оборудования
+
+.history
+  - @versions.each do |version|
+    %p.version
+      .time=l version.created_at, :format => :long
+      .user
+        -if version.whodunnit != nil
+          -user=@users.select{|u| u.id==version.whodunnit.to_i}.first
+          %span.login=user.name
+        -else
+          %span.role Неизвестный пользователь
+      .event
+        %span=@events[version.event]
+        оборудование
+  =paginate @versions
+
+= link_to "Назад", equipment_path(@equipment),:class=>'btn btn-small'

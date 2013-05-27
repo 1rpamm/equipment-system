@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  inventory: 
+  room: 
+  responsible: 
+  domain_name: MyString
+  md5sum: MyString
+  accepted_at: 2013-03-10 15:11:02
+  deleted_at: 2013-03-10 15:11:02
+  allow_del_at: 2013-03-10 15:11:02
+
+two:
+  inventory: 
+  room: 
+  responsible: 
+  domain_name: MyString
+  md5sum: MyString
+  accepted_at: 2013-03-10 15:11:02
+  deleted_at: 2013-03-10 15:11:02
+  allow_del_at: 2013-03-10 15:11:02

@@ -1,0 +1,20 @@
+= form_for @subsystem, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :device_id, :class => 'control-label'
+    .controls
+      = f.select :device_id, Device.find(:all, :order=>:name).collect{ |c| ["#{c.name} (#{c.vendor.name})",c.id]}, :required=>true, :prompt => "Выберите устройство"
+  .control-group
+    = f.label :name, :class => 'control-label'
+    .controls
+      = f.text_field :name, :class => 'text_field', :placeholder => "Наименование подсистемы"
+  .control-group
+    = f.label :subvendor_hex, :class => 'control-label'
+    .controls
+      = f.text_field :subvendor_hex, :class => 'text_field', :class => 'text_field', :placeholder => "0x0000-0xffff"
+  .control-group
+    = f.label :subdevice_hex, :class => 'control-label'
+    .controls
+      = f.text_field :subdevice_hex, :class => 'text_field', :class => 'text_field', :placeholder => "0x0000-0xffff"
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), subsystems_path, :class => 'btn'

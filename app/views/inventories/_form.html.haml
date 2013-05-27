@@ -1,0 +1,20 @@
+= form_for @inventory, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :act_type_id, :class => 'control-label'
+    .controls
+      = f.select :act_type_id, ActType.find(:all, :order=>:name).collect{ |c| [c.name,c.id]}, :required=>true, :prompt => "Выберите тип акта"
+  .control-group
+    = f.label :inv_num, :class => 'control-label'
+    .controls
+      = f.text_field :inv_num, :class => 'text_field', :placeholder => "Инвентарный номер"
+  .control-group
+    = f.label :act_num, :class => 'control-label'
+    .controls
+      = f.text_field :act_num, :class => 'text_field', :placeholder => "Номер акта"
+  .control-group
+    = f.label :accept_date, :class => 'control-label'
+    .controls
+      = f.date_select :accept_date, :class => 'date_select', :placeholder => "Дата принятия"
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), inventories_path, :class => 'btn'

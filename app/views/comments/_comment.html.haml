@@ -1,0 +1,14 @@
+.comment
+  .comment_head
+    -if @equipment
+      =link_to "Редактровать", edit_equipment_comment_path(@equipment,comment)
+      =link_to "Удалить", [@equipment,comment], :confirm => "Вы уверены?", :method => :delete
+    .time=l comment.created_at, :format => :long
+    .id ##{comment.id}
+  .comment_body
+    .name
+      =comment.user ? "#{comment.user.name}:" : nil
+    .comment_content
+      =simple_format(comment.body)
+    .clear
+.clear

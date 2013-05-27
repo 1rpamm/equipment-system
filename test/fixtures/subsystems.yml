@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  device: 1
+  subvendor: 1
+  subdevice: 1
+  name: MyString1
+
+two:
+  id: 2
+  device: 2
+  subvendor: 2
+  subdevice:2
+  name: MyString2

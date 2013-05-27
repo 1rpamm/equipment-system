@@ -1,0 +1,19 @@
+.room.hover_shadow
+  .room_title
+    -#.time=l room.created_at, :format => :long
+    .head
+      -#%span.label.label-important=room.human_status
+      %span.user=room.name
+    -#.laboratory
+      =room.device.laboratory
+  .device
+    -#-if room.device
+    -#  =room.device.device_type.description
+    -#  =room.device.name
+    -#-else
+    -#  Устройство не указано.
+  .actions
+    = link_to_icon 'icon-info-sign icon-black', 'Подробно', room,:class=>'btn btn-mini'# btn-info' #Подробно
+    = link_to_icon 'icon-pencil icon-black', 'Изменить', edit_room_path(room),:class=>'btn btn-mini'# btn-success' #Изменить
+    = link_to_icon 'icon-trash icon-black', 'Удалить', room, :confirm => 'Вы уверены?', :method => :delete,:class=>'btn btn-mini'# btn-danger' #Удалить
+  .clear

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  inv_num: 1
+  act_num: 1
+  accept_date: 2013-02-21
+
+two:
+  inv_num: 1
+  act_num: 1
+  accept_date: 2013-02-21

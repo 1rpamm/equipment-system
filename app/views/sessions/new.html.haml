@@ -1,0 +1,17 @@
+.page-header
+  %h1 Авторизация
+=form_tag(sessions_path, class: 'form-horizontal') do
+  .control-group
+    =label_tag :name,User.human_attribute_name(:name),class: 'control-label'
+    .controls=text_field :login, params[:login], :placeholder => "Логин или электронная почта"
+  .control-group
+    =label_tag :password,User.human_attribute_name(:password),class: 'control-label'
+    .controls=password_field_tag :password
+  .control-group
+    .controls
+      %label.checkbox
+        =check_box_tag :remember_me, 1, params[:remember_me]
+        =User.human_attribute_name(:remember_me)
+  .form-actions
+    =submit_tag "Войти", :class => 'btn'
+    =link_to "Регистрация",new_user_path, :class =>  'btn btn-info'

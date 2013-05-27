@@ -1,0 +1,56 @@
+- model_class = Equipment
+.page-header
+  %h1 Просмотр оборудования
+
+%p
+  %strong= model_class.human_attribute_name(:inventory_id) + ':'
+  %br
+  = @equipment.inventory.act_num
+%p
+  %strong= model_class.human_attribute_name(:room_id) + ':'
+  %br
+  = @equipment.room.name
+%p
+  %strong= model_class.human_attribute_name(:responsible_id) + ':'
+  %br
+  = @equipment.responsible.name
+%p
+  %strong= model_class.human_attribute_name(:details) + ':'
+  %br
+  - @equipment.details.each do |detail|
+    #{link_to ">", detail}
+    #{detail.vendor.name} > #{detail.device.name}
+    -if detail.subsystem
+      > #{detail.subsystem.name}
+    %br
+%p
+  %strong= model_class.human_attribute_name(:domain_name) + ':'
+  %br
+  = @equipment.domain_name
+-if  @equipment.accepted_at
+  %p
+    %strong= model_class.human_attribute_name(:accepted_at) + ':'
+    %br
+    =l @equipment.accepted_at, format: :long
+-if @equipment.deleted_at
+  %p
+    %strong= model_class.human_attribute_name(:deleted_at) + ':'
+    %br
+    =l @equipment.deleted_at, format: :long
+
+
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), equipment_path, :class => 'btn'
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_equipment_path(@equipment), :class => 'btn btn-warning'
+  = link_to "Принять", accept_path(@equipment), :method => "accept", :class => 'btn btn-success'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), equipment_path(@equipment), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
+  = link_to "Показать историю", show_history_path(@equipment), :class => 'btn btn-info'
+
+.clear
+
+-@comments.each do |comment|
+  =render 'comments/comment', :comment => comment
+
+=paginate @comments
+
+=link_to "Ответить", new_equipment_comment_path(@equipment), :class => "btn btn-primary"

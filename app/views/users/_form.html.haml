@@ -1,0 +1,41 @@
+= form_for @user, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :login, :class => 'control-label'
+    .controls
+      = f.text_field :login, :class => 'text_field', :placeholder => "Введите логин пользователя"
+  .control-group
+    = f.label :name, :class => 'control-label'
+    .controls
+      = f.text_field :name, :class => 'text_field', :placeholder => "Введите имя пользователя"
+  .control-group
+    = f.label :email, :class => 'control-label'
+    .controls
+      = f.text_field :email, :class => 'text_field', :placeholder => "Введите адрес электронной почты"
+  .control-group
+    = f.label :password, :class => 'control-label'
+    .controls
+      = f.password_field :password, :class => 'password_field', :placeholder => "Введите пароль"
+      %br
+      = f.password_field :password_confirmation, :class => 'password_field', :placeholder => "Повторите пароль"
+  .control-group
+    .control-label
+      %label Права пользователей
+    .controls
+      %label
+        = f.check_box :admin_user
+        = User.human_attribute_name(:admin_user)
+      %label
+        = f.check_box :admin_equip
+        = User.human_attribute_name(:admin_equip)
+      %label
+        = f.check_box :admin_inv
+        = User.human_attribute_name(:admin_inv)
+      %label
+        = f.check_box :responsible
+        = User.human_attribute_name(:responsible)
+      %label
+        = f.check_box :assistant
+        = User.human_attribute_name(:assistant)
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), users_path, :class => 'btn'

@@ -1,0 +1,12 @@
+= form_for @vendor, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :name, :class => 'control-label'
+    .controls
+      = f.text_field :name, :class => 'text_field', :placeholder => "Наименование производителя"
+  .control-group
+    = f.label :vendor_hex, :class => 'control-label'
+    .controls
+      = f.text_field :vendor_hex, :class => 'text_field', :placeholder => "0x0000-0xffff"
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), vendors_path, :class => 'btn'

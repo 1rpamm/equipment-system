@@ -1,0 +1,24 @@
+= form_for @detail, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :vendor_id, :class => 'control-label'
+    .controls
+      = f.select :vendor_id, Vendor.find(:all, :order=>:name).collect{ |c| [c.name,c.id]}, :required=>true, :prompt => "Выберите производителя"
+  .control-group
+    = f.label :device_id, :class => 'control-label'
+    .controls
+      = f.select :device_id, Device.find(:all, :order=>:name).collect{ |c| [c.name,c.id]}, :required=>true, :prompt => "Выберите устройство"
+  .control-group
+    = f.label :subsystem_id, :class => 'control-label'
+    .controls
+      = f.select :subsystem_id, Subsystem.find(:all, :order=>:name).collect{ |c| [c.name,c.id]}, :required=>true, :prompt => "Выберите подсистему"
+  .control-group
+    = f.label :rev, :class => 'control-label'
+    .controls
+      = f.text_field :rev, :class => 'number_field', :placeholder => "Номер ревизии"
+  .control-group
+    = f.label :serial, :class => 'control-label'
+    .controls
+      = f.text_field :serial, :class => 'text_field', :placeholder => "Введите серийный номер"
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), details_path, :class => 'btn btn-inverse'

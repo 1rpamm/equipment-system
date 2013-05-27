@@ -1,0 +1,78 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comment{
+  .comment_head {
+    font-size: 9pt;
+    font-family: 'Monaco','Liberation Mono','Droid Sans Mono','Ubuntu Mono','Lucida Console','Helvetica Neue',monospace;
+    position: relative;
+    .time {
+      bottom: 0;
+      color: #999999;
+      left: 600px;
+      position: absolute;
+    }
+    .id {
+      bottom: 0;
+      color: #999999;
+      margin: 0 -8px !important;
+      padding: 0 8px !important;
+      position: absolute;
+      right: 8px;
+    }
+  }
+  .comment_body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px dotted #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    font-family: 'Monaco','Liberation Mono','Droid Sans Mono','Ubuntu Mono','Lucida Console','Helvetica Neue',monospace;
+    font-size: 10pt;
+    line-height: 1.3em;
+    padding: 5px 5px 5px 5px ;
+    .avatar {
+      float: left;
+      width: 120px;
+      text-overflow: clip;
+      border-right: 2px solid #777;
+    }
+    .comment_content {
+      margin: 5px;
+      background: rgba(255,255,255,0.6);
+    }
+    .clear {
+      clear: both;
+    }
+  }
+  margin: 5px;
+  position: relative;
+  height: 100px;
+}
+
+.clear {
+  clear: both;
+}
+
+.equipment_comment {
+  .title {
+    font-size: 14pt !important;
+    padding: 5px 0px;
+  }
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px dotted #BBBBBB;
+  border-radius: 3px 3px 3px 3px;
+  font-family: 'Monaco','Liberation Mono','Droid Sans Mono','Ubuntu Mono','Lucida Console','Helvetica Neue',monospace;
+  font-size: 10pt;
+  line-height: 1.3em;
+  padding: 7px 8px 5px;
+}
+
+.name {
+  font-size: 12pt;
+  font-decoration: bold;
+}
+
+.text_area {
+  width: 500px;
+}
+

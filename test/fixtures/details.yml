@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vendor: 
+  device: 
+  subsystem: 
+  rev: 1
+  serial: MyString
+  accepted_at: 2013-02-21 13:19:24
+  deleted_at: 2013-02-21 13:19:24
+
+two:
+  vendor: 
+  device: 
+  subsystem: 
+  rev: 1
+  serial: MyString
+  accepted_at: 2013-02-21 13:19:24
+  deleted_at: 2013-02-21 13:19:24

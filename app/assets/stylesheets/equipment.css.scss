@@ -1,0 +1,35 @@
+// Place all the styles related to the Equipment controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_equip, .accepted_equip{
+  /*background-color: #f5f5f5;
+  margin: 0 90% 3px 5px;*/
+  padding: 3px 2px;
+  span.list_head{
+    cursor: pointer;
+    color: #08c
+  }
+  span.list_head:hover{
+    cursor: pointer;
+    color: #005580;
+    text-decoration: underline;
+  }
+}
+.devices_list {
+  margin-left: 15px;
+  .device {
+    background-color: #f5f5f5;
+    margin: 0 60% 3px 5px;
+    padding: 2px;
+    .info {
+      float: left;
+    }
+    .actions {
+      float: right;
+      display: inline;
+      position: relative;
+      right: 5px;
+    }
+  }
+}

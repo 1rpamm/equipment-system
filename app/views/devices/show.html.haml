@@ -1,0 +1,34 @@
+- model_class = Device
+.page-header
+  %h1 Устройство
+
+%p
+  %strong= model_class.human_attribute_name(:vendor_id) + ':'
+  %br
+  -if @device.vendor
+    = @device.vendor.name
+  -else
+    = @device.vendor
+    %label
+      Производителя НЕ СУЩЕСТВЕТ
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @device.name
+%p
+  %strong= model_class.human_attribute_name(:device_hex) + ':'
+  %br
+  = @device.device_hex
+%p
+  %strong Подсистемы:
+  -subsystems = Subsystem.where(:device_id => @device)
+  -subsystems.each do |sub|
+    %br
+    =link_to sub.name, sub
+
+
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), devices_path, :class => 'btn'
+  -if logged_in? && current_user.admin_user?
+    = link_to t('.edit', :default => t("helpers.links.edit")), edit_device_path(@device), :class => 'btn btn-warning'
+    = link_to t('.destroy', :default => t("helpers.links.destroy")), device_path(@device), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm")) }, :class => 'btn btn-danger'

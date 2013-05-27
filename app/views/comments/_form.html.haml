@@ -1,0 +1,5 @@
+= form_for [@equipment,@comment], :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.text_area :body, :class => 'text_area', :cols => 50, :rows => 10, placeholder: "Введите комментарий"
+  .form-actions
+    = f.submit nil, :class => 'btn btn-info'
