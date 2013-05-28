@@ -42,8 +42,11 @@
                     %li{class: controller_name==item[:name] ? 'active' : nil}=link_to item[:title], url_for(:controller=>item[:name])
 
             .nav.pull-right
-              %form.navbar-search.pull-left
-                %input.search-query{:placeholder => "Search", :type => "text"}
+              -#  %form.navbar-search.pull-left
+              -#    = form_tag search_path, :method => :get do
+              -#      %p
+              -#        = text_field_tag :query, params[:query]
+              -#        = submit_tag "Search!"
               -if logged_in?
                 %li.dropdown
                   %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}

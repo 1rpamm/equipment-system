@@ -1,5 +1,8 @@
 # -*- encoding : utf-8 -*-
 class User < ActiveRecord::Base
+  after_create :reindex!
+  after_update :reindex!
+
   has_many :equipment
   has_many :comments, :order => "comment.created_at"
   
@@ -17,6 +20,15 @@ class User < ActiveRecord::Base
 
   attr_accessible  :name, :login, :email, :password, :password_confirmation, :admin_user, :admin_equip, :admin_inv, :responsible, :assistant
 
+  searchable do
+    text :name, :login, :email
+    time    :created_at
+
+    string :sort_title do
+      title.downcase.gsub(/^(an?|the)/, '')
+    end
+  end
+
   def admin_user?
     admin_user==1
   end
@@ -33,4 +45,8 @@ class User < ActiveRecord::Base
     responsible==1
   end
 
+  protected
+  def reindex!
+    Sunspot.index!(self)
+  end
 end

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
-COMMIT="equip views fix" #~($TIMESTAMP)"
+COMMIT="epic equip crash fix" #~($TIMESTAMP)"
 
 #~ git add .
 #~ git rm -rf tmp/

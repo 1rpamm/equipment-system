@@ -1,5 +1,8 @@
 # -*- encoding : utf-8 -*-
 class Detail < ActiveRecord::Base
+  after_create :reindex!
+  after_update :reindex!
+
   scope :full_load, includes(:vendor, :device, :subsystem)
 
   belongs_to :vendor
@@ -15,4 +18,19 @@ class Detail < ActiveRecord::Base
   validates :serial, presence: true
 
   validates_uniqueness_of :serial, :scope => [:vendor_id, :device_id, :subsystem_id, :rev]
+
+  searchable do
+    text :rev, :serial
+    integer :vendor_id, :device_id, :subsystem_id
+    time    :created_at
+
+    string  :sort_title do
+      title.downcase.gsub(/^(an?|the)/, '')
+    end
+  end
+
+  protected
+  def reindex!
+    Sunspot.index!(self)
+  end
 end
