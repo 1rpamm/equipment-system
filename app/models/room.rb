@@ -1,8 +1,5 @@
 # -*- encoding : utf-8 -*-
 class Room < ActiveRecord::Base
-  after_create :reindex!
-  after_update :reindex!
-
   scope :full_load, includes(:equipment)
 
   has_many :equipment, :order=>'equipment.domain_name'
@@ -13,14 +10,5 @@ class Room < ActiveRecord::Base
 
   searchable do
     text :name
-
-    string  :sort_title do
-      title.downcase.gsub(/^(an?|the)/, '')
-    end
-  end
-
-  protected
-  def reindex!
-    Sunspot.index!(self)
   end
 end

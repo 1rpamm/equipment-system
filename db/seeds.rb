@@ -156,7 +156,7 @@ while c <= 150
   new_equipment = Equipment.create(:responsible_id => responsible.id,
                                    :room_id => room.id,
                                    :inventory_id => inventory.id,
-                                   :domain_name => "#{host[rand(8)]}#{rand(24)+1}",
+                                   :domain_name => "#{host[rand(8)]} #{rand(24)+1}",
                                    :details => details)
 
   if rand(2)==1

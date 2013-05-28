@@ -47,6 +47,7 @@
               -#      %p
               -#        = text_field_tag :query, params[:query]
               -#        = submit_tag "Search!"
+              %li=link_to "Поиск", search_path
               -if logged_in?
                 %li.dropdown
                   %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}

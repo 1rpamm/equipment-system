@@ -19,7 +19,7 @@
           %th= model_class.human_attribute_name(:created_at)
           %th=t '.actions', :default => t("helpers.actions")
       %tbody
-        - new_equipment = @equipment.where(:accepted_at => nil).where(:deleted_at => nil)
+        - new_equipment = @equipment.where(:accepted_at => nil, :deleted_at => (Time.now - 1.year)..Time.now)
         - new_equipment.each do |equipment|
           %tr.info
             %td

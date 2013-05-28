@@ -1,8 +1,5 @@
 # -*- encoding : utf-8 -*-
 class Inventory < ActiveRecord::Base
-  after_create :reindex!
-  after_update :reindex!
-
   scope :full_load, includes(:act_type)
 
   belongs_to :act_type
@@ -16,19 +13,10 @@ class Inventory < ActiveRecord::Base
   validates :accept_date, presence: true
 
   searchable do
-    text :body
+    text    :body
     integer :act_num, :inv_num
     integer :act_type_id
     time    :accept_date
     time    :created_at
-
-    string  :sort_title do
-      title.downcase.gsub(/^(an?|the)/, '')
-    end
-  end
-
-  protected
-  def reindex!
-    Sunspot.index!(self)
   end
 end

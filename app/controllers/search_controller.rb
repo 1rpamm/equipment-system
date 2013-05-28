@@ -1,9 +1,27 @@
 class SearchController < ApplicationController
   def search
-    @post = Post.search {
-      keywords params[:query]
-      order_by :created_at, :asc
+    @acts = ActType.search {
+      keywords "%#{params[:query]}%"
+    }
+    @details = Detail.search {
+      keywords "%#{params[:query]}%"
+    }
+    @equipment = Equipment.search {
+      keywords "%#{params[:query]}%"
     }.results
-    render 'posts/index'
+    @inventories = Inventory.search {
+      keywords "%#{params[:query]}%"
+    }.results
+    @rooms = Room.search {
+      keywords "%#{params[:query]}%"
+    }.results
+    @users = User.search  {
+      keywords "%#{params[:query]}%"
+    }.results
+
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.xml  { render :xml => @results }
+    end
   end
 end

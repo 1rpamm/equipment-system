@@ -34,3 +34,10 @@ Create databases and migrations
 
 $ rake db:create:all
 $ rake db:migrate
+
+
+
+
+rake sunspot:solr:start
+                  reindex
+                  stop

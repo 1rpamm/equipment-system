@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5159c3a6-8414-4cfe-9d7e-039a0b6ed35c">
+  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="79df3deb-ec79-4176-bd14-ac29399a9fe4">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_test</jdbc-url>
     <user-name>ode</user-name>
@@ -9,11 +9,11 @@
         <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
       </library>
       <library>
-        <url>jar://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="42667131-8c92-498b-a94d-1ca3ca99e75a">
+  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2412305f-7625-443c-b48d-d7c776d29ffc">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_development</jdbc-url>
     <user-name>ode</user-name>
@@ -22,7 +22,7 @@
         <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
       </library>
       <library>
-        <url>jar://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
       </library>
     </libraries>
   </data-source>

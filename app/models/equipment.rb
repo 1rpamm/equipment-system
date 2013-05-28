@@ -1,8 +1,5 @@
 # -*- encoding : utf-8 -*-
 class Equipment < ActiveRecord::Base
-  after_create :reindex!
-  after_update :reindex!
-
   has_paper_trail
 
   scope :full_load, includes(:inventory, :room, :responsible, :details)
@@ -37,14 +34,5 @@ class Equipment < ActiveRecord::Base
     integer :detail_ids, :multiple => true
     time    :accepted_at, :deleted_at
     time    :created_at
-
-    string  :sort_title do
-      title.downcase.gsub(/^(an?|the)/, '')
-    end
-  end
-
-  protected
-  def reindex!
-    Sunspot.index!(self)
   end
 end

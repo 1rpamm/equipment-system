@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
-COMMIT="epic equip crash fix" #~($TIMESTAMP)"
+COMMIT="search installed" #~($TIMESTAMP)"
 
 #~ git add .
 #~ git rm -rf tmp/
@@ -11,6 +11,7 @@ COMMIT="epic equip crash fix" #~($TIMESTAMP)"
 
 git add .
 git rm -rf tmp/
+git rm -rf log/
 git commit -m "$COMMIT"
 git push -u origin master
 #~ git push --force --progress origin master
