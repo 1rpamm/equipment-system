@@ -1,0 +1,36 @@
+$ sudo apt-get install postgresql-9.1
+$ sudo apt-get install libpq-dev
+
+$ sudo su postgres -c psql
+postgres=# CREATE ROLE ode SUPERUSER LOGIN;
+postgres=# \q
+
+Modify Gemfile:
+# Remove gem 'sqlite3'
+gem 'pg'
+
+Modify database.yml in app directory
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: EquipmentSystem_development
+  pool: 5
+  timeout: 5000
+  username: ode
+  password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: EquipmentSystem_test
+  pool: 5
+  timeout: 5000
+  username: ode
+  password:
+
+Run bundle install
+$ bundle install
+
+Create databases and migrations
+
+$ rake db:create:all
+$ rake db:migrate

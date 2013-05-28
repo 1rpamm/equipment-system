@@ -5,7 +5,7 @@ class Inventory < ActiveRecord::Base
   belongs_to :act_type
   belongs_to :equipment
 
-  attr_accessible :accept_date, :act_num, :inv_num, :act_type_id
+  attr_accessible :accept_date, :act_num, :inv_num, :act_type_id, :body
 
   validates :act_type_id, presence: true
   validates :act_num, presence: true, uniqueness: true

@@ -9,23 +9,18 @@
     = f.label :inventory_id, :class => 'control-label'
     .controls
       = f.text_field :inventory_id, 'data-pre' => [@equipment.inventory].to_json(only: [:id, :act_num])
-      -#= f.select :inventory_id, Inventory.find(:all, :order=>:inv_num).collect{ |c| [c.act_num,c.id]}, :prompt => "Выберите инвентарный номер"
   .control-group
     = f.label :room_id, :class => 'control-label'
     .controls
       = f.text_field :room_id, 'data-pre' => [@equipment.room].to_json(only: [:id, :name])
-      -#= f.select :room_id, Room.find(:all, :order=>:name).collect{ |c| [c.name,c.id]}, :required=>true, :prompt => "Выберите кабинет"
   .control-group
     = f.label :responsible_id, :class => 'control-label'
     .controls
       = f.text_field :responsible_id, 'data-pre' => [@equipment.responsible].to_json(only: [:id, :name])
-      -#=f.select :responsible_id, User.where(:responsible => 1).order(:name).collect{ |c| [c.name,c.id]}, :prompt => "Выберите ответственного"
   .control-group
     = f.label :domain_name, :class => 'control-label'
     .controls
-      = f.text_field :domain_name, :class => 'text_field', placeholder: "Наименование оборудования"  
-  -#= f.fields_for :equipment do |builder|
-  -#  = render "details", :f => builder
+      = f.text_field :domain_name, :class => 'text_field', placeholder: "Наименование оборудования"
   .control-group
     = f.label :detail_tokens, :class => 'control-label'
     .controls

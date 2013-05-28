@@ -15,6 +15,10 @@
     = f.label :accept_date, :class => 'control-label'
     .controls
       = f.date_select :accept_date, :class => 'date_select', :placeholder => "Дата принятия"
+  .control-group
+    = f.label :body, :class => 'control-label'
+    .controls
+      = f.text_field :body
   .form-actions
     = f.submit nil, :class => 'btn btn-info'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), inventories_path, :class => 'btn'

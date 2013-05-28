@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(:version => 20130408103847) do
     t.string   "act_num"
     t.integer  "act_type_id"
     t.date     "accept_date"
+    t.text     "body"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

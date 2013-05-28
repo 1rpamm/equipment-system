@@ -53,47 +53,15 @@
                     %li= link_to "Профиль", user_path(current_user)
                     %li= link_to "Редактировать", edit_user_path(current_user)
                     %li.divider
-                    %li= link_to "Выход",logout_path
+                    %li= link_to "Выход", logout_path
               -else
                 %li= link_to "Вход", new_session_path
-    -# left menu
-    .container-fluid#body
+
+    .container-fluid
       .row-fluid
-        .span3
-          .well#menu
-            %h3 Обновления
-            %ul.nav.nav-list
-              -# activity
-              %li.nav-header Активность
-              -User.order("last_login_at DESC").last(3).each do |user|
-                -if !user.last_login_at.nil?
-                  %p
-                    .name= link_to "#{user.name}", "#{user_path(user)}"
-                    .pull-right.muted
-                      %small
-                        = User.human_attribute_name(:last_login_at)
-                        =l user.last_login_at, format: :long
-              .clear
-              %br
-              -# new equipment
-              %li.nav-header Новое оборудование: #{new_equip_count}
-              -new_equip.first(5).each do |equipment|
-                %p
-                  .equip= link_to "#{equipment.room.name}:#{equipment.domain_name}", "#{equipment_path(equipment)}"
-                  .pull-right.muted
-                    %small
-                      = Equipment.human_attribute_name(:created_at)
-                      =l equipment.created_at, format: :long
-              .pull-right.clear
-                =link_to "Подробнее...", equipment_index_path
-              .clear
+        = bootstrap_flash
+        = yield
 
-        -# body
-        .span9
-          = bootstrap_flash
-          = yield
-
-    -# copyright
     .clear
       .muted
         .pull-right

@@ -20,4 +20,7 @@ $ ->
   $("input#equipment_room_id").tokenInput(window.rooms_path,$.extend({},tokenInputOptions,{tokenLimit: 1, prePopulate: $(this).attr('data-pre')}))
   $("input#equipment_inventory_id").tokenInput(window.inventories_path,$.extend({},tokenInputOptions2,{tokenLimit: 1, prePopulate: $(this).attr('data-pre')}))
   $("input#equipment_responsible_id").tokenInput(window.users_path,$.extend({},tokenInputOptions,{tokenLimit: 1,prePopulate: $(this).attr('data-pre')}))
-  $("input#equipment_detail_tokens").tokenInput("/details.json",$.extend({},tokenInputOptions3,{prePopulate: $(this).attr('data-pre')}))
+  $("input#equipment_detail_tokens").tokenInput(window.details_path,$.extend({},tokenInputOptions3,{prePopulate: $(this).attr('data-pre')}))
+
+$ ->
+  $('#myTab a:last').tab('show')

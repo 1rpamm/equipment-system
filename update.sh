@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
-COMMIT="fix updater" #~($TIMESTAMP)"
+COMMIT="small update" #~($TIMESTAMP)"
 
 #~ git add .
 #~ git rm -rf tmp/

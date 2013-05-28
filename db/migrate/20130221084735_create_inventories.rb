@@ -6,6 +6,7 @@ class CreateInventories < ActiveRecord::Migration
       t.string :act_num
       t.references :act_type
       t.date :accept_date
+      t.text :body
       t.timestamps
     end
     add_index :inventories, :act_type_id
