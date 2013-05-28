@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
-COMMIT="small update" #~($TIMESTAMP)"
+COMMIT="equip views fix" #~($TIMESTAMP)"
 
 #~ git add .
 #~ git rm -rf tmp/

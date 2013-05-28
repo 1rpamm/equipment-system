@@ -13,10 +13,8 @@ gem 'pg'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+    # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier'
 end
 
@@ -35,3 +33,10 @@ gem 'paper_trail'
 gem 'i18n'
 gem 'russian'
 gem 'bcrypt-ruby'
+
+gem 'sunspot_rails' #форк для rails
+gem 'sunspot_solr'  #сам Solr
+gem 'progress_bar'  #нужен для индексирования
+group :test, :development do #в группу для разработки и тестирования
+  gem 'sunspot-rails-tester' #это нужно для запуска тестов, иначе не работает.                            #...
+end
