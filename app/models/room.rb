@@ -9,6 +9,7 @@ class Room < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
 
   searchable do
+    integer :id
     text :name
   end
 end

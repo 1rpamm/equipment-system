@@ -17,6 +17,7 @@ class Detail < ActiveRecord::Base
   validates_uniqueness_of :serial, :scope => [:vendor_id, :device_id, :subsystem_id, :rev]
 
   searchable do
+    integer :id
     text    :rev, :serial
     integer :vendor_id, :device_id, :subsystem_id
     time    :created_at

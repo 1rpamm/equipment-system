@@ -23,4 +23,4 @@ $ ->
   $("input#equipment_detail_tokens").tokenInput(window.details_path,$.extend({},tokenInputOptions3,{prePopulate: $(this).attr('data-pre')}))
 
 $ ->
-  $('#myTab a:last').tab('show')
+  $('#Tab a:last').tab('show')

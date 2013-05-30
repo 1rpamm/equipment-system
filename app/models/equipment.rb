@@ -26,6 +26,7 @@ class Equipment < ActiveRecord::Base
   end
 
   searchable do
+    integer :id
     text :comments do
       comments.map { |comment| comment.body }
     end

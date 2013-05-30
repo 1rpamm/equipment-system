@@ -16,5 +16,4 @@ git add .
 git rm -rf tmp/
 git rm -rf log/
 git commit -m "$commit"
-#git push -u origin master
 git push --force --progress origin master
