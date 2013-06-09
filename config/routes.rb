@@ -3,6 +3,9 @@ EquipmentSystem::Application.routes.draw do
 
   resources :equipment do
     resources :comments
+    member do
+      get :pdf
+    end
   end
 
   resources :details

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="dc9b3ded-4a80-44b4-b044-1f354fecce74">
+  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a9bdb2ae-ede0-4fb3-b0c6-113cc40d65ee">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_test</jdbc-url>
     <user-name>ode</user-name>
@@ -13,7 +13,7 @@
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="6521da90-ab9e-4703-a4e7-1d43a6e03e81">
+  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="78d752a1-86e1-4d5c-b7b3-2e47d564800a">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_development</jdbc-url>
     <user-name>ode</user-name>

@@ -1,56 +1,74 @@
 - model_class = Equipment
-.page-header
-  %h1 Просмотр оборудования
+.span9
+  .page-header
+    %h1 Просмотр оборудования
 
-%p
-  %strong= model_class.human_attribute_name(:inventory_id) + ':'
-  %br
-  = @equipment.inventory.act_num
-%p
-  %strong= model_class.human_attribute_name(:room_id) + ':'
-  %br
-  = @equipment.room.name
-%p
-  %strong= model_class.human_attribute_name(:responsible_id) + ':'
-  %br
-  = @equipment.responsible.name
-%p
-  %strong= model_class.human_attribute_name(:details) + ':'
-  %br
-  - @equipment.details.each do |detail|
-    #{link_to ">", detail}
-    #{detail.vendor.name} > #{detail.device.name}
-    -if detail.subsystem
-      > #{detail.subsystem.name}
-    %br
-%p
-  %strong= model_class.human_attribute_name(:domain_name) + ':'
-  %br
-  = @equipment.domain_name
--if  @equipment.accepted_at
-  %p
-    %strong= model_class.human_attribute_name(:accepted_at) + ':'
-    %br
-    =l @equipment.accepted_at, format: :long
--if @equipment.deleted_at
-  %p
-    %strong= model_class.human_attribute_name(:deleted_at) + ':'
-    %br
-    =l @equipment.deleted_at, format: :long
-
-
-.form-actions
-  = link_to t('.back', :default => t("helpers.links.back")), equipment_path, :class => 'btn'
-  = link_to t('.edit', :default => t("helpers.links.edit")), edit_equipment_path(@equipment), :class => 'btn btn-warning'
-  = link_to "Принять", accept_path(@equipment), :method => "accept", :class => 'btn btn-success'
-  = link_to t('.destroy', :default => t("helpers.links.destroy")), equipment_path(@equipment), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
-  = link_to "Показать историю", show_history_path(@equipment), :class => 'btn btn-info'
-
+  .span2
+    %strong= model_class.human_attribute_name(:inventory_id) + ':'
+  .span8
+    = @equipment.inventory.inv_num
+  .span2
+    %strong= model_class.human_attribute_name(:room_id) + ':'
+  .span8
+    = @equipment.room.name
+  .span2
+    %strong= model_class.human_attribute_name(:responsible_id) + ':'
+  .span8
+    = @equipment.responsible.name
+  .span2
+    %strong= model_class.human_attribute_name(:details) + ':'
+  .span8
+    %p
+      - @equipment.details.each do |detail|
+        #{link_to (image_tag("detail.png",:size => "32x32")), detail}
+        #{detail.vendor.name} > #{detail.device.name}
+        -if detail.subsystem
+          > #{detail.subsystem.name}
+        %br
+  .span2
+    %strong= model_class.human_attribute_name(:domain_name) + ':'
+  .span8
+    = @equipment.domain_name
+  -if  @equipment.accepted_at
+    .span2
+      %strong= model_class.human_attribute_name(:accepted_at) + ':'
+    .span8
+      =l @equipment.accepted_at, format: :long
+  -if @equipment.deleted_at
+    .span2
+      %strong= model_class.human_attribute_name(:deleted_at) + ':'
+    .span8
+      =l @equipment.deleted_at, format: :long
+.span2
+  .form-actions
+    %p
+      = link_to equipment_path do
+        #{image_tag("back.png",:size => "20x20")} Назад
+    %p
+      = link_to edit_equipment_path(@equipment) do
+        #{image_tag("edit.png",:size => "20x20")} Редактировать
+    %p
+      = link_to accept_path(@equipment), :method => "accept" do
+        #{image_tag("accept.png",:size => "20x20")} Принять
+    %p
+      = link_to equipment_path(@equipment), :method => "delete" do
+        #{image_tag("delete.png",:size => "20x20")} Удалить
+    %p
+      = link_to show_history_path(@equipment) do
+        #{image_tag("history.png",:size => "20x20")} Показать историю
+    %p
+      =link_to pdf_equipment_path(@equipment) do
+        #{image_tag("make.png",:size => "20x20")} Сформировать отчет
+    %p
+      -@pdfs.each do |pdf|
+        .well
+          = link_to "/#{pdf}" do
+            =image_tag("pdf_icon.png",:size => "32x32", :alt => pdf.split("\/").last)
+            #{short(pdf)}
 .clear
-
+%hr
+%h4 Комментарии:
 -@comments.each do |comment|
   =render 'comments/comment', :comment => comment
-
 =paginate @comments
-
 =link_to "Ответить", new_equipment_comment_path(@equipment), :class => "btn btn-primary"

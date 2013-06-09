@@ -47,17 +47,25 @@
               -#      %p
               -#        = text_field_tag :query, params[:query]
               -#        = submit_tag "Search!"
-              %li=link_to "Поиск", search_path
+              %li
+                =link_to search_path do
+                  #{image_tag("search.png",:size => "20x20")} Поиск
               -if logged_in?
                 %li.dropdown
                   %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                    = current_user.name
+                    #{image_tag("user.png",:size => "20x20")} #{current_user.name}
                     %b.caret
                   %ul.dropdown-menu()
-                    %li= link_to "Профиль", user_path(current_user)
-                    %li= link_to "Редактировать", edit_user_path(current_user)
+                    %li
+                      = link_to user_path(current_user) do
+                        #{image_tag("show.png",:size => "20x20")} Профиль
+                    %li
+                      = link_to edit_user_path(current_user) do
+                        #{image_tag("edit.png",:size => "20x20")} Редактировать
                     %li.divider
-                    %li= link_to "Выход", logout_path
+                    %li
+                      = link_to logout_path do
+                        #{image_tag("logout.png",:size => "20x20")} Выход
               -else
                 %li= link_to "Вход", new_session_path
 
