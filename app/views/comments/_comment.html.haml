@@ -7,6 +7,7 @@
     -#.id ##{comment.id}
   .comment_body
     .name
+      #{image_tag("comment.png",:size => "32x32")}
       =comment.user ? "#{comment.user.name}:" : nil
     .comment_content
       =simple_format(comment.body)

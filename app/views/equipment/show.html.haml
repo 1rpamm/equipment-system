@@ -6,15 +6,18 @@
   .span2
     %strong= model_class.human_attribute_name(:inventory_id) + ':'
   .span8
+    #{link_to (image_tag("inventory.png",:size => "32x32")), @equipment.inventory}
     = @equipment.inventory.inv_num
   .span2
     %strong= model_class.human_attribute_name(:room_id) + ':'
   .span8
+    #{link_to (image_tag("room.png",:size => "32x32")), @equipment.room}
     = @equipment.room.name
   .span2
     %strong= model_class.human_attribute_name(:responsible_id) + ':'
   .span8
-    = @equipment.responsible.name
+    #{link_to (image_tag("user.png",:size => "32x32")), @equipment.responsible}
+    =@equipment.responsible.name
   .span2
     %strong= model_class.human_attribute_name(:details) + ':'
   .span8
@@ -28,16 +31,19 @@
   .span2
     %strong= model_class.human_attribute_name(:domain_name) + ':'
   .span8
-    = @equipment.domain_name
+    #{image_tag("computer.png",:size => "32x32")}
+    =@equipment.domain_name
   -if  @equipment.accepted_at
     .span2
       %strong= model_class.human_attribute_name(:accepted_at) + ':'
     .span8
+      #{image_tag("accept.png",:size => "32x32")}
       =l @equipment.accepted_at, format: :long
   -if @equipment.deleted_at
     .span2
       %strong= model_class.human_attribute_name(:deleted_at) + ':'
     .span8
+      #{image_tag("delete.png",:size => "32x32")}
       =l @equipment.deleted_at, format: :long
 .span2
   .form-actions

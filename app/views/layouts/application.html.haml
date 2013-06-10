@@ -67,7 +67,9 @@
                       = link_to logout_path do
                         #{image_tag("logout.png",:size => "20x20")} Выход
               -else
-                %li= link_to "Вход", new_session_path
+                %li
+                  = link_to new_session_path do
+                    #{image_tag("login.png",:size => "20x20")} Вход
 
     .container-fluid
       .row-fluid
