@@ -10,6 +10,7 @@
       %th= model_class.human_attribute_name(:role)
       %th= model_class.human_attribute_name(:deleted_at)
       %th= model_class.human_attribute_name(:login_count)
+      %th Количество оборудования
       %th= model_class.human_attribute_name(:last_login_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -53,6 +54,7 @@
             = user.assistant
           %td
           %td= user.login_count
+          %td= Equipment.where(:responsible_id => user.id).count
           %td
             -if user.last_login_at
               =l user.last_login_at, format: :long

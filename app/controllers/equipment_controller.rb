@@ -4,7 +4,10 @@ class EquipmentController < ApplicationController
   # GET /equipment
   # GET /equipment.json
   def index
-    @equipment = Equipment.full_load.order("deleted_at, accepted_at, domain_name").page(params[:page])
+    @equipment = Equipment.full_load.page(params[:page])
+    Dir.chdir("public") do
+      @mpdfs = Dir.glob("reports/user#{current_user.id}/*.pdf")
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @equipment }
@@ -112,6 +115,7 @@ class EquipmentController < ApplicationController
     #@equipment.destroy
     if @equipment.deleted_at.nil?
       @equipment.deleted_at = Time.now
+      @equipment.accepted_at = nil
       flag = 1
     else
       @equipment.deleted_at = nil
@@ -133,7 +137,7 @@ class EquipmentController < ApplicationController
     equipment = Equipment.find(params[:id])
     date = l Time.now, format: :long
     headers = ['Производитель', 'Устройство', 'rev.']
-    widths = [200, 200, 120]
+    widths = [140, 365, 35]
     if equipment.deleted_at
       deleted_at = l equipment.deleted_at, format: :long
     elsif equipment.accepted_at
@@ -153,8 +157,9 @@ class EquipmentController < ApplicationController
                   :bold => "#{Rails.root}/app/assets/fonts/verdanab.ttf",
                   :italic => "#{Rails.root}/app/assets/fonts/verdanai.ttf",
                   :normal  => "#{Rails.root}/app/assets/fonts/verdana.ttf" })
-          font font, :size => 12
-          text "МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ИНДУСТРИАЛЬНЫЙ УНИВЕРСИТЕТ", :size => 16, :align => :center
+          font font, :size => 10
+          text "<b>МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ИНДУСТРИАЛЬНЫЙ УНИВЕРСИТЕТ</b>", :size => 13, :align => :center, :inline_format => true
+          text "Система учета компьютерного и сетевого оборудования", :size => 12, :align => :center
           move_down 20
           text "<b>Оборудование:</b> #{equipment.domain_name}", :inline_format => true
           text "<b>Материально-ответственный:</b> #{equipment.responsible.name}", :inline_format => true
@@ -173,7 +178,7 @@ class EquipmentController < ApplicationController
           equipment.details.each do |detail|
             data += [[detail.vendor.name, detail.device.name, detail.rev]]
           end
-          table(data, :row_colors => %w[eeeeee ffffff], :column_widths => [140, 365, 35])
+          table(data, :row_colors => %w[eeeeee ffffff], :column_widths => widths)
           date = "Отчет сформирован: #{date}"
           go_to_page(page_count)
           move_down(710)
@@ -183,5 +188,59 @@ class EquipmentController < ApplicationController
     end
     #render
     redirect_to equipment, notice: 'Отчет сформирован'
+  end
+
+  def mpdf
+    user = User.find(params[:id])
+    equipments = Equipment.includes(:details).where(:responsible_id => user.id).order("deleted_at DESC", :domain_name)
+    date = l Time.now, format: :long
+    headers = ['Производитель', 'Устройство', 'rev.']
+    widths = [140, 365, 35]
+    require "prawn"
+    Dir.chdir("public/reports") do
+      if Dir["user#{params[:id]}"] == []
+        Dir.mkdir("user#{params[:id]}")
+      end
+      Dir.chdir("user#{params[:id]}") do
+        Prawn::Document.generate(user.login+".pdf") do
+          font = "Verdana"
+          font_families.update(
+              font => {
+                  :bold => "#{Rails.root}/app/assets/fonts/verdanab.ttf",
+                  :italic => "#{Rails.root}/app/assets/fonts/verdanai.ttf",
+                  :normal  => "#{Rails.root}/app/assets/fonts/verdana.ttf" })
+          font font, :size => 10
+          text "<b>МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ИНДУСТРИАЛЬНЫЙ УНИВЕРСИТЕТ</b>", :size => 13, :align => :center, :inline_format => true
+          text "Система учета компьютерного и сетевого оборудования", :size => 12, :align => :center
+          text "Cписок оборудования пользователя #{user.name}", :size => 12, :align => :center
+          move_down 20
+          equipments.each do |equipment|
+            text "<b>Оборудование:</b> #{equipment.domain_name}", :inline_format => true
+            text "<b>Инвентарный номер:</b> #{equipment.inventory.inv_num}", :inline_format => true
+            text "<b>Кабинет:</b> #{equipment.room.name}", :inline_format => true
+            if equipment.deleted_at
+              text "<b>Удалено:</b> #{equipment.deleted_at}", :inline_format => true
+            elsif equipment.accepted_at
+              text "<b>Принято:</b> #{equipment.accepted_at}", :inline_format => true
+            end
+            text "<b>Последнее обновление:</b> #{equipment.updated_at}", :inline_format => true
+            text "<b>Детали:</b>", :inline_format => true
+            @data = []
+            @data += [headers]
+            equipment.details.each do |detail|
+              @data += [[detail.vendor.name, detail.device.name, detail.rev]]
+            end
+            table(@data, :row_colors => %w[eeeeee ffffff], :column_widths => widths)
+            move_down 20
+          end
+          date = "Отчет сформирован: #{date}"
+          go_to_page(page_count)
+          move_down(710)
+          text date, :align => :right, :style => :italic, :size => 9
+        end
+      end
+    end
+    #render
+    redirect_to equipment_index_path, notice: 'Отчет сформирован'
   end
 end

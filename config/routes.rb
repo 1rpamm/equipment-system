@@ -5,6 +5,7 @@ EquipmentSystem::Application.routes.draw do
     resources :comments
     member do
       get :pdf
+      get :mpdf
     end
   end
 

@@ -8,7 +8,7 @@
       %th= Equipment.human_attribute_name(:accepted_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
-    - accepted_equipment = @equipment.where(:accepted_at => (Time.now - 1.year)..Time.now, :deleted_at => nil)
+    - accepted_equipment = @equipment.where("accepted_at IS NOT NULL", :deleted_at => nil)
     - accepted_equipment.each do |equipment|
       %tr.success
         %td

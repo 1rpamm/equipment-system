@@ -8,7 +8,7 @@
       %th= Equipment.human_attribute_name(:deleted_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
-    - deleted_equipment = @equipment.where(:deleted_at => (Time.now - 1.year)..Time.now)
+    - deleted_equipment = @equipment.where("deleted_at IS NOT NULL")
     - deleted_equipment.each do |equipment|
       %tr.error
         %td

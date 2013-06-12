@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a9bdb2ae-ede0-4fb3-b0c6-113cc40d65ee">
+  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f4d4f741-1340-4c14-a141-92e58dcd70dc">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-    <jdbc-url>jdbc:postgresql:EquipmentSystem_test</jdbc-url>
+    <jdbc-url>jdbc:postgresql:EquipmentSystem_development</jdbc-url>
     <user-name>ode</user-name>
     <libraries>
       <library>
@@ -13,9 +13,9 @@
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="78d752a1-86e1-4d5c-b7b3-2e47d564800a">
+  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1efe8ae4-ae2a-4a3e-8324-3c34bae8437d">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-    <jdbc-url>jdbc:postgresql:EquipmentSystem_development</jdbc-url>
+    <jdbc-url>jdbc:postgresql:EquipmentSystem_test</jdbc-url>
     <user-name>ode</user-name>
     <libraries>
       <library>
