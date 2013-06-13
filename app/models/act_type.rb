@@ -8,6 +8,5 @@ class ActType < ActiveRecord::Base
 
   searchable do
     text :name
-    integer :id
   end
 end

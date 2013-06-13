@@ -172,7 +172,7 @@ class EquipmentController < ApplicationController
             text "<b>Принято:</b> #{accepted_at}", :inline_format => true
           end
           text "<b>Последнее обновление:</b> #{updated_at}", :inline_format => true
-          text "<b>Детали:</b>", :inline_format => true
+          text "<b>Список деталей в оборудовании:</b>", :inline_format => true
           data = []
           data += [headers]
           equipment.details.each do |detail|
@@ -196,6 +196,19 @@ class EquipmentController < ApplicationController
     date = l Time.now, format: :long
     headers = ['Производитель', 'Устройство', 'rev.']
     widths = [140, 365, 35]
+    deleted_at = []
+    accepted_at = []
+    updated_at = []
+    equipments.each_with_index do |equipment, i|
+      if equipment.deleted_at
+        deleted_at[i] = l equipment.deleted_at, format: :long
+        accepted_at[i] = 0
+      elsif equipment.accepted_at
+        accepted_at[i] = l equipment.accepted_at, format: :long
+        deleted_at[i] = 0
+      end
+      updated_at[i] = l equipment.updated_at, format: :long
+    end
     require "prawn"
     Dir.chdir("public/reports") do
       if Dir["user#{params[:id]}"] == []
@@ -214,23 +227,23 @@ class EquipmentController < ApplicationController
           text "Система учета компьютерного и сетевого оборудования", :size => 12, :align => :center
           text "Cписок оборудования пользователя #{user.name}", :size => 12, :align => :center
           move_down 20
-          equipments.each do |equipment|
+          equipments.each_with_index do |equipment, i|
             text "<b>Оборудование:</b> #{equipment.domain_name}", :inline_format => true
             text "<b>Инвентарный номер:</b> #{equipment.inventory.inv_num}", :inline_format => true
             text "<b>Кабинет:</b> #{equipment.room.name}", :inline_format => true
             if equipment.deleted_at
-              text "<b>Удалено:</b> #{equipment.deleted_at}", :inline_format => true
+              text "<b>Удалено:</b> #{deleted_at[i]}", :inline_format => true
             elsif equipment.accepted_at
-              text "<b>Принято:</b> #{equipment.accepted_at}", :inline_format => true
+              text "<b>Принято:</b> #{accepted_at[i]}", :inline_format => true
             end
-            text "<b>Последнее обновление:</b> #{equipment.updated_at}", :inline_format => true
-            text "<b>Детали:</b>", :inline_format => true
-            @data = []
-            @data += [headers]
+            text "<b>Последнее обновление:</b> #{updated_at[i]}", :inline_format => true
+            text "<b>Список деталей в оборудовании:</b>", :inline_format => true
+            data = []
+            data += [headers]
             equipment.details.each do |detail|
-              @data += [[detail.vendor.name, detail.device.name, detail.rev]]
+              data += [[detail.vendor.name, detail.device.name, detail.rev]]
             end
-            table(@data, :row_colors => %w[eeeeee ffffff], :column_widths => widths)
+            table(data, :row_colors => %w[eeeeee ffffff], :column_widths => widths)
             move_down 20
           end
           date = "Отчет сформирован: #{date}"

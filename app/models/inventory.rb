@@ -15,8 +15,8 @@ class Inventory < ActiveRecord::Base
   searchable do
     text    :body
     integer :act_num, :inv_num
-    integer :act_type_id
+    #integer :act_type_id
     time    :accept_date
-    time    :created_at
+    #time    :created_at
   end
 end

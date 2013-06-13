@@ -77,4 +77,5 @@
 -@comments.each do |comment|
   =render 'comments/comment', :comment => comment
 =paginate @comments
-=link_to "Ответить", new_equipment_comment_path(@equipment), :class => "btn btn-primary"
+=link_to new_equipment_comment_path(@equipment), :class => "btn btn-small" do
+  #{image_tag("add.png",:size => "16x16")} Ответить

@@ -1,16 +1,16 @@
 class SearchController < ApplicationController
   def search
     @acts = ActType.search {
-      keywords "%#{params[:query]}%"
-    }
+      keywords "#{params[:query]}"
+    }.results
     @details = Detail.search {
       keywords "%#{params[:query]}%"
-    }
+    }.results
     @equipment = Equipment.search {
-      keywords "%#{params[:query]}%"
+      keywords "#{params[:query]}%"
     }.results
     @inventories = Inventory.search {
-      keywords "%#{params[:query]}%"
+      keywords "#{params[:query]}"
     }.results
     @rooms = Room.search {
       keywords "%#{params[:query]}%"

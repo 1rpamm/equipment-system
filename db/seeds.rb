@@ -39,6 +39,7 @@ inventory_file=File.new("./db/seed/inventories.txt")
   new_inventory = Inventory.create(:inv_num => c.to_s,
                                    :act_num=>rand(89999999)+1,
                                    :act_type_id => rand(14)+1,
+                                   :body => "some text ##{c}",
                                    :accept_date => Time.now)
   new_inventory.save!
   print "\rCreating inventories: #{c} of 50"
