@@ -26,14 +26,11 @@ class Equipment < ActiveRecord::Base
   end
 
   searchable do
-    #integer :id
     text :comments do
       comments.map { |comment| comment.body }
     end
     text :domain_name
-    #integer :inventory_id, :room_id, :responsible_id
-    #integer :detail_ids, :multiple => true
-    time    :accepted_at, :deleted_at
-    #time    :created_at
+    integer :inventory_id, :room_id, :responsible_id
+    time    :accepted_at, :deleted_at, :created_at
   end
 end

@@ -5,6 +5,7 @@ class CreateDetails < ActiveRecord::Migration
       t.references :vendor
       t.references :device
       t.references :subsystem
+      t.string :name
       t.string :rev
       t.string :serial
       t.datetime :accepted_at

@@ -8,6 +8,7 @@
   .span8
     #{link_to (image_tag("inventory.png",:size => "32x32")), @equipment.inventory}
     = @equipment.inventory.inv_num
+
   .span2
     %strong= model_class.human_attribute_name(:room_id) + ':'
   .span8
@@ -19,7 +20,7 @@
     #{link_to (image_tag("user.png",:size => "32x32")), @equipment.responsible}
     =@equipment.responsible.name
   .span2
-    %strong= model_class.human_attribute_name(:details) + ':'
+    %strong Детали:
   .span8
     %p
       - @equipment.details.each do |detail|
@@ -75,7 +76,7 @@
 %hr
 %h4 Комментарии:
 -@comments.each do |comment|
-  =render 'comments/comment', :comment => comment
+  %p=render 'comments/comment', :comment => comment
 =paginate @comments
 =link_to new_equipment_comment_path(@equipment), :class => "btn btn-small" do
   #{image_tag("add.png",:size => "16x16")} Ответить

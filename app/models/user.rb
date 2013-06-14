@@ -18,9 +18,8 @@ class User < ActiveRecord::Base
   attr_accessible  :name, :login, :email, :password, :password_confirmation, :admin_user, :admin_equip, :admin_inv, :responsible, :assistant
 
   searchable do
-    #integer :id
     text :name, :login, :email
-    #time :created_at
+    time :created_at
   end
 
   def admin_user?

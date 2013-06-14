@@ -1,61 +1,122 @@
 - model_class = User
-.page-header
-  %h1 Пользователь
-
-%p
-  %strong= model_class.human_attribute_name(:login) + ':'
-  %br
-  = @user.login
-%p
-  %strong= model_class.human_attribute_name(:name) + ':'
-  %br
-  = @user.name
-%p
-  %strong= model_class.human_attribute_name(:email) + ':'
-  %br
-  = @user.email
-%p
-  %strong Права пользователя:
-  -if @user.admin_user == 1
-    %br
-    = model_class.human_attribute_name(:admin_user)
-  -if @user.admin_equip == 1
-    %br
-    = model_class.human_attribute_name(:admin_equip)
-  -if @user.admin_inv == 1
-    %br
-    = model_class.human_attribute_name(:admin_inv)
+.span9
+  .page-header
+    %h1 Пользователь
+  .span2
+    %strong= model_class.human_attribute_name(:login) + ':'
+  .span8
+    #{(image_tag("userlogin.png",:size => "32x32"))}
+    = @user.login
+  .span2
+    %strong= model_class.human_attribute_name(:name) + ':'
+  .span8
+    #{image_tag("user.png",:size => "32x32")}
+    = @user.name
+  .span2
+    %strong= model_class.human_attribute_name(:email) + ':'
+  .span8
+    #{image_tag("email.png",:size => "32x32")}
+    = @user.email
+  .span2
+    %strong Права пользователя:
+  .span8
+    -if @user.admin_user == 1
+      #{image_tag("arrow-right-red.png",:size => "32x32")}
+      = model_class.human_attribute_name(:admin_user)
+      .clear
+    -if @user.admin_equip == 1
+      #{image_tag("arrow-right-red.png",:size => "32x32")}
+      = model_class.human_attribute_name(:admin_equip)
+      .clear
+    -if @user.admin_inv == 1
+      #{image_tag("arrow-right-red.png",:size => "32x32")}
+      = model_class.human_attribute_name(:admin_inv)
+      .clear
+    -if @user.responsible == 1
+      #{image_tag("arrow-right-green.png",:size => "32x32")}
+      = model_class.human_attribute_name(:responsible)
+      .clear
+    -if @user.assistant == 1
+      #{image_tag("arrow-right-green.png",:size => "32x32")}
+      = model_class.human_attribute_name(:assistant)
+      .clear
   -if @user.responsible == 1
-    %br
-    = model_class.human_attribute_name(:responsible)
-  -if @user.assistant == 1
-    %br
-    = model_class.human_attribute_name(:assistant)
-%p
-  -if @user.responsible == 1
-    %strong Ответственный за:
-    -equipment = Equipment.where(:responsible_id => @user).order(:domain_name)
-    %br
-    -equipment.each do |equip|
-      =link_to equip.domain_name, equip
-%p
-  %strong= model_class.human_attribute_name(:login_count) + ':'
-  %br
-  = @user.login_count
-%p
-  %strong= model_class.human_attribute_name(:last_login_at) + ':'
-  %br
-  -if @user.last_login_at
-    =l @user.last_login_at, format: :long
-
-%p
+    .span2
+      %strong Ответственный за:
+    .span8
+      #accordion.accordion
+        .accordion-group
+          .accordion-heading
+            %a.accordion-toggle{"data-toggle" => "collapse", :href => "#collapseOne"}
+              #{image_tag("computer.png",:size => "32x32")}
+              Оборудование (#{Equipment.where(:responsible_id => @user).count}):
+          #collapseOne.accordion-body.collapse
+            .accordion-inner
+              %table.table.table-bordered.table-condensed.table-hover
+                %thead
+                  %tr
+                    %th= Equipment.human_attribute_name(:domain_name)
+                    %th= Equipment.human_attribute_name(:room_id)
+                    %th= Equipment.human_attribute_name(:inventory_id)
+                    %th Деталей
+                    %th= Equipment.human_attribute_name(:accepted_at)
+                    %th= Equipment.human_attribute_name(:deleted_at)
+                %tbody
+                  -equipments = Equipment.where(:responsible_id => @user).order("deleted_at DESC, accepted_at DESC, domain_name")
+                  -equipments.each do |equipment|
+                    %tr.info
+                      %td= link_to equipment.domain_name, equipment
+                      %td
+                        = equipment.room.name
+                      %td
+                        -if equipment.inventory
+                          = equipment.inventory.inv_num
+                      %td= equipment.details.count
+                      %td
+                        -if equipment.accepted_at && !equipment.deleted_at
+                          =l equipment.accepted_at, format: :long
+                        -elsif !equipment.deleted_at
+                          .label.label-important
+                            %center
+                              НЕ ПРИНЯТО
+                      %td
+                        -if equipment.deleted_at
+                          =l equipment.deleted_at, format: :long
+  .span2
+    %strong= model_class.human_attribute_name(:login_count) + ':'
+  .span8
+    #{image_tag("login-count.png",:size => "32x32")}
+    = @user.login_count
+  .span2
+    %strong= model_class.human_attribute_name(:last_login_at) + ':'
+  .span8
+    -if @user.last_login_at
+      #{image_tag("date.png",:size => "32x32")}
+      =l @user.last_login_at, format: :long
+    -else
+      нет входов в систему
   -if @user.deleted_at
-    %strong= model_class.human_attribute_name(:deleted_at) + ':'
-    %br
+    .span2
+      %strong= model_class.human_attribute_name(:deleted_at) + ':'
+    .span8
+      #{image_tag("delete.png",:size => "32x32")}
       =l @user.deleted_at, format: :long
 
-.form-actions
-  = link_to t('.back', :default => t("helpers.links.back")), users_path, :class => 'btn'
-  -if logged_in? && current_user.admin_user?
-    = link_to t('.edit', :default => t("helpers.links.edit")), edit_user_path(@user), :class => 'btn btn-warning'
-    = link_to t('.destroy', :default => t("helpers.links.destroy")), user_path(@user), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm")) }, :class => 'btn btn-danger'
+.span2
+  .form-actions
+    %p
+      = link_to users_path do
+        #{image_tag("back.png",:size => "20x20")} Назад
+    -if logged_in? && current_user.admin_user?
+      %p
+        = link_to edit_user_path(@user) do
+          #{image_tag("edit.png",:size => "20x20")} Редактировать
+      -if @user.deleted_at
+        %p
+          = link_to user_path(@user), :method => "delete" do
+            #{image_tag("restore.png",:size => "20x20")} Восстановить
+      -else
+        %p
+          = link_to user_path(@user), :method => "delete" do
+            #{image_tag("delete.png",:size => "20x20")} Удалить
+.clear

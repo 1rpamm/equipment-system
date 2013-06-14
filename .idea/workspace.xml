@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2906bce1-d9a3-4672-8f15-1265f020ab0f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/rails.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/sunspot.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/1/admin.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/100/ice 3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/104/mars 6.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/149/fire 22.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/16/monster 23.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/23/monster 9.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/36/monster 15.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/75/mars 22.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/78/stone 4.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/91/lib 8.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/user12/wkolnik.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/user2/ololow.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/admin-extra.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/elevate.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/mapping-ISOLatin1Accent.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/protwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/schema.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/scripts.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/solrconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/spellings.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/synonyms.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fdt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fdx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fnm" afterPath="" />
@@ -240,6 +263,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.prx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.tii" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1b" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1d" afterPath="" />
@@ -248,63 +272,96 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_3r" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_k" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/write.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reports/user1/admin.pdf" afterPath="$PROJECT_DIR$/public/reports/user1/admin.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/spellchecker/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/spellchecker/segments_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/start.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reports/user17/jesus.pdf" afterPath="$PROJECT_DIR$/public/reports/user17/jesus.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reports/user10/ostapenko.pdf" afterPath="$PROJECT_DIR$/public/reports/user10/ostapenko.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130221091924_create_details.rb" afterPath="$PROJECT_DIR$/db/migrate/20130221091924_create_details.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.haml" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_form.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/act_type.rb" afterPath="$PROJECT_DIR$/app/models/act_type.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/detail.rb" afterPath="$PROJECT_DIR$/app/models/detail.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/details_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/details_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/equipment.rb" afterPath="$PROJECT_DIR$/app/models/equipment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/equipment_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/equipment_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/act_types/index.html.haml" afterPath="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/details/index.html.haml" afterPath="$PROJECT_DIR$/app/views/details/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/index.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventories/index.html.haml" afterPath="$PROJECT_DIR$/app/views/inventories/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rooms/index.html.haml" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.haml" afterPath="$PROJECT_DIR$/app/views/search/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inventories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inventories_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/inventory.rb" afterPath="$PROJECT_DIR$/app/models/inventory.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/room.rb" afterPath="$PROJECT_DIR$/app/models/room.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/rooms.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rooms.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/details/show.html.haml" afterPath="$PROJECT_DIR$/app/views/details/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/show.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventories/show.html.haml" afterPath="$PROJECT_DIR$/app/views/inventories/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.haml" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seed/usernames.txt" afterPath="$PROJECT_DIR$/db/seed/usernames.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="equipment_system.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/database.yml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369736925961" ignored="false" />
-    <file path="/seeds.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371124677319" ignored="false" />
-    <file path="/index.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371124381712" ignored="false" />
+    <file path="/database.yml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371205852181" ignored="false" />
+    <file path="/seeds.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371218696938" ignored="false" />
+    <file path="/index.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371237682824" ignored="false" />
     <file path="/application.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370850787219" ignored="false" />
-    <file path="/show.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371118980710" ignored="false" />
-    <file path="/Dummy.txt" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371106038750" ignored="false" />
+    <file path="/show.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371234389094" ignored="false" />
+    <file path="/Dummy.txt" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371222903633" ignored="false" />
     <file path="/20130221084735_create_inventories.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369731438416" ignored="false" />
-    <file path="/_form.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371123058000" ignored="false" />
+    <file path="/_form.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371220122147" ignored="false" />
     <file path="/inventory.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369777090332" ignored="false" />
-    <file path="/_new_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371119284609" ignored="false" />
+    <file path="/_new_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371237918134" ignored="false" />
     <file path="/routes.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371064163682" ignored="false" />
     <file path="/man.txt" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369783768486" ignored="false" />
-    <file path="/equipment_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371107000272" ignored="false" />
+    <file path="/equipment_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371237825999" ignored="false" />
     <file path="/_all_equipment.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369745371215" ignored="false" />
     <file path="/_your_own_equipment.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369746100986" ignored="false" />
-    <file path="/Gemfile" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370783642785" ignored="false" />
+    <file path="/Gemfile" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371235603197" ignored="false" />
     <file path="/user.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369899688354" ignored="false" />
     <file path="/room.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369899531838" ignored="false" />
     <file path="/equipment.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369899490032" ignored="false" />
-    <file path="/detail.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369899465144" ignored="false" />
-    <file path="/act_type.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369899679329" ignored="false" />
+    <file path="/detail.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371215271934" ignored="false" />
+    <file path="/act_type.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371205618583" ignored="false" />
     <file path="/search_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371123499398" ignored="false" />
     <file path="/update.sh" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1369785074905" ignored="false" />
-    <file path="/comments.css.scss" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370855854833" ignored="false" />
+    <file path="/comments.css.scss" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371219488516" ignored="false" />
     <file path="/equipment_helper.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370791583276" ignored="false" />
     <file path="/new.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370850839249" ignored="false" />
     <file path="/sessions.css.scss" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370851042232" ignored="false" />
-    <file path="/_comment.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370855499282" ignored="false" />
-    <file path="/bootstrap_and_overrides.css.less" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371063015107" ignored="false" />
-    <file path="/_your_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371119269845" ignored="false" />
+    <file path="/_comment.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371219443373" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.less" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371231983871" ignored="false" />
+    <file path="/_your_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371236967685" ignored="false" />
     <file path="/_accepted_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371119275259" ignored="false" />
     <file path="/_deleted_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371119280341" ignored="false" />
-    <file path="/equipment.js.coffee" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371121275739" ignored="false" />
+    <file path="/equipment.js.coffee" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371238361019" ignored="false" />
+    <file path="/users_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371222285081" ignored="false" />
+    <file path="/details_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371232440325" ignored="false" />
+    <file path="/20130221091924_create_details.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371214609022" ignored="false" />
+    <file path="/inventories_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371220042677" ignored="false" />
+    <file path="/rooms.css.scss" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371229847435" ignored="false" />
+    <file path="/act_types_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371239658529" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,19 +386,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <file leaf-file-name="equipment.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inventories/index.html.haml">
+        <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="209" selection-start="55" selection-end="1284" vertical-scroll-proportion="-16.25">
+            <state line="19" column="23" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_accepted_equip.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_deleted_equip.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_new_equip.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="42" selection-start="438" selection-end="438" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/equipment/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="14" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -350,16 +443,34 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="18" selection-start="5570" selection-end="5570" vertical-scroll-proportion="-23.734177">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <file leaf-file-name="_your_equip.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="65" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.5492958">
+            <state line="7" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="act_types_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/act_types_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.10215664">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="equipment_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/equipment_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -383,29 +494,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/equipment/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/act_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/detail.rb" />
-        <option value="$PROJECT_DIR$/app/models/equipment.rb" />
-        <option value="$PROJECT_DIR$/app/models/inventory.rb" />
-        <option value="$PROJECT_DIR$/app/models/room.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/details_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/details/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/details/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/inventories/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/inventories/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/search/index.html.haml" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/equipment_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/act_types_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-3" />
-    <option name="width" value="1446" />
-    <option name="height" value="877" />
+    <option name="width" value="1926" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -439,16 +550,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="equipment_system" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -496,38 +597,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment_system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment_system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,7 +658,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -611,7 +680,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
+              <option name="myItemId" value="rooms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipment_system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipment-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -699,28 +790,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="comments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment_system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="act_types" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -771,24 +840,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment_system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -811,26 +862,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment_system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -953,14 +992,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1446" height="877" extended-state="6" />
+    <frame x="-3" y="0" width="1926" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67096776" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18794835" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19210246" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1037,114 +1076,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/search_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/inventories/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="44" selection-start="504" selection-end="544" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/equipment/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="93" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-16.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/act_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/room.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="240" selection-end="240" vertical-scroll-proportion="0.20331325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/detail.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="49" selection-start="640" selection-end="640" vertical-scroll-proportion="0.41493776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.47717842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subsystem.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/equipment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.7816901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/inventory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="565" selection-end="565" vertical-scroll-proportion="0.41493776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/details/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="91" selection-start="49" selection-end="1348" vertical-scroll-proportion="0.67784256">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+        <state line="25" column="48" selection-start="1164" selection-end="1335" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inventories/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="209" selection-start="55" selection-end="1284" vertical-scroll-proportion="-16.25">
+        <state line="26" column="0" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.443686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="12" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2276" column="0" selection-start="61753" selection-end="61753" vertical-scroll-proportion="38.75142">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="42" selection-start="438" selection-end="438" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="23" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/equipment/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="18" selection-start="5570" selection-end="5570" vertical-scroll-proportion="-23.734177">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/equipment_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="65" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.5492958">
+        <state line="5" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/act_types_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.10215664">
           <folding />
         </state>
       </provider>

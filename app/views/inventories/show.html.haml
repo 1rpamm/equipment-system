@@ -1,36 +1,85 @@
 - model_class = Inventory
-.page-header
-  %h1=t '.title', :default => model_class.model_name.human
+.span9
+  .page-header
+    %h1=t '.title', :default => model_class.model_name.human
 
-%p
-  %strong= model_class.human_attribute_name(:inv_num) + ':'
-  %br
-  = @inventory.inv_num
-%p
-  %strong= model_class.human_attribute_name(:act_num) + ':'
-  %br
-  = @inventory.act_num
-%p
-  %strong= model_class.human_attribute_name(:act_type_id) + ':'
-  %br
-  = @inventory.act_type.name
-%p
-  %strong= model_class.human_attribute_name(:accept_date) + ':'
-  %br
-  =l @inventory.accept_date, format: :long
-%p
-  %strong= model_class.human_attribute_name(:body) + ':'
-  %br
-  =@inventory.body if @inventory.body.present?
-%p
-  %strong Оборудование:
-  -equipment = Equipment.where(:inventory_id => @inventory).order(:domain_name)
-  -equipment.each do |equip|
-    %br
-    =link_to equip.domain_name, equip
+  .span2
+    %strong= model_class.human_attribute_name(:inv_num) + ':'
+  .span8
+    =(image_tag("inventory.png",:size => "32x32"))
+    = @inventory.inv_num
+  .span2
+    %strong= model_class.human_attribute_name(:act_num) + ':'
+  .span8
+    =(image_tag("num.png",:size => "32x32"))
+    = @inventory.act_num
+  .span2
+    %strong= model_class.human_attribute_name(:act_type_id) + ':'
+  .span8
+    =(image_tag("doc.png",:size => "32x32"))
+    = @inventory.act_type.name
+  .span2
+    %strong= model_class.human_attribute_name(:accept_date) + ':'
+  .span8
+    =(image_tag("accept.png",:size => "32x32"))
+    =l @inventory.accept_date, format: :long
+  .span2
+    %strong Оборудование:
+  .span8
+    #accordion.accordion
+      .accordion-group
+        .accordion-heading
+          %a.accordion-toggle{"data-toggle" => "collapse", :href => "#collapseOne"}
+            #{image_tag("computer.png",:size => "32x32")}
+            Оборудование (#{Equipment.where(:inventory_id => @inventory).count}):
+        #collapseOne.accordion-body.collapse
+          .accordion-inner
+            %table.table.table-bordered.table-condensed.table-hover
+              %thead
+                %tr
+                  %th= Equipment.human_attribute_name(:domain_name)
+                  %th= Equipment.human_attribute_name(:room_id)
+                  %th= Equipment.human_attribute_name(:responsible_id)
+                  %th Деталей
+                  %th= Equipment.human_attribute_name(:accepted_at)
+                  %th= Equipment.human_attribute_name(:deleted_at)
+              %tbody
+                -equipments = Equipment.where(:inventory_id => @inventory).order("deleted_at DESC, accepted_at DESC, domain_name")
+                -equipments.each do |equipment|
+                  %tr.info
+                    %td= link_to equipment.domain_name, equipment
+                    %td
+                      = equipment.room.name
+                    %td
+                      -if equipment.inventory
+                        = equipment.inventory.inv_num
+                    %td= equipment.details.count
+                    %td
+                      -if equipment.accepted_at && !equipment.deleted_at
+                        =l equipment.accepted_at, format: :long
+                      -elsif !equipment.deleted_at
+                        .label.label-important
+                          %center
+                            НЕ ПРИНЯТО
+                    %td
+                      -if equipment.deleted_at
+                        =l equipment.deleted_at, format: :long
+  .span2
+    %strong Комментарий
+  .span8
+    =(image_tag("text.png",:size => "32x32"))
+    =@inventory.body if @inventory.body.present?
 
-.form-actions
-  = link_to t('.back', :default => t("helpers.links.back")), inventories_path, :class => 'btn'
-  -if logged_in? && current_user.admin_user?
-    = link_to t('.edit', :default => t("helpers.links.edit")), edit_inventory_path(@inventory), :class => 'btn btn-warning'
-    = link_to t('.destroy', :default => t("helpers.links.destroy")), inventory_path(@inventory), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm")) }, :class => 'btn btn-danger'
+.span2
+  .form-actions
+    %p
+      = link_to inventories_path do
+        #{image_tag("back.png",:size => "20x20")} Назад
+    -if logged_in? && current_user.admin_inv?
+      %p
+        = link_to edit_inventory_path(@inventory) do
+          #{image_tag("edit.png",:size => "20x20")} Редактировать
+      %p
+        = link_to inventory_path(@inventory), :method => "delete" do
+          #{image_tag("delete.png",:size => "20x20")} Удалить
+.clear

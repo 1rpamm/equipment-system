@@ -8,7 +8,7 @@
   .control-group
     = f.label :inventory_id, :class => 'control-label'
     .controls
-      = f.text_field :inventory_id, 'data-pre' => [@equipment.inventory].to_json(only: [:id, :act_num])
+      = f.text_field :inventory_id, 'data-pre' => [@equipment.inventory].to_json(only: [:id, :inv_num])
   .control-group
     = f.label :room_id, :class => 'control-label'
     .controls

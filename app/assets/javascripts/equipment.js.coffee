@@ -14,13 +14,14 @@ jQuery ->
     event.preventDefault()
 
 tokenInputOptions = {crossDomain: false, hintText: "Введите название", noResultText: "Ничего не найдено", searchingText: "Поиск", preventDuplicates: true}
-tokenInputOptions2 = {propertyToSearch: "act_num", crossDomain: false, hintText: "Введите название", noResultText: "Ничего не найдено", searchingText: "Поиск", preventDuplicates: true}
-tokenInputOptions3 = {propertyToSearch: "serial", crossDomain: false, hintText: "Введите название", noResultText: "Ничего не найдено", searchingText: "Поиск", preventDuplicates: false}
+tokenInputOptions2 = {propertyToSearch: "inv_num", crossDomain: false, hintText: "Введите название", noResultText: "Ничего не найдено", searchingText: "Поиск", preventDuplicates: true}
+tokenInputOptions3 = {crossDomain: false, hintText: "Введите название", noResultText: "Ничего не найдено", searchingText: "Поиск", preventDuplicates: false}
 $ ->
   $("input#equipment_room_id").tokenInput(window.rooms_path,$.extend({},tokenInputOptions,{tokenLimit: 1, prePopulate: $(this).attr('data-pre')}))
   $("input#equipment_inventory_id").tokenInput(window.inventories_path,$.extend({},tokenInputOptions2,{tokenLimit: 1, prePopulate: $(this).attr('data-pre')}))
   $("input#equipment_responsible_id").tokenInput(window.users_path,$.extend({},tokenInputOptions,{tokenLimit: 1,prePopulate: $(this).attr('data-pre')}))
   $("input#equipment_detail_tokens").tokenInput(window.details_path,$.extend({},tokenInputOptions3,{prePopulate: $(this).attr('data-pre')}))
+
 
 $ ->
   $('#Tab a:last').tab('show')

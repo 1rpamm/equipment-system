@@ -1,27 +1,37 @@
-- model_class = ActType
-.page-header
-  %h1 Типы актов
-%table.table.table-condensed.table-hover
-  %thead
-    %tr
-      %th= model_class.human_attribute_name(:name)
-      %th=t '.actions', :default => t("helpers.actions")
-  %tbody
+.span10
+  .page-header
+    %h1 Типы актов
+  .accordion
     - @act_types.each do |act_type|
-      %tr
-        %td #{act_type.name} (#{(Inventory.where(:act_type_id => act_type).count)})
-        %td
-          .btn-group
-            = link_to t('.show', :default => t("helpers.links.show")), act_type_path(act_type), :class => 'btn btn-mini btn-info'
-            -if logged_in? && current_user.admin_user?
-              %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
-                %span.caret
-              %ul.dropdown-menu
-                %li= link_to t('.edit', :default => t("helpers.links.edit")), edit_act_type_path(act_type)
-                %li= link_to t('.destroy', :default => t("helpers.links.destroy")), act_type_path(act_type), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm")) }
-
+      .accordion-group
+        .accordion-heading
+          .accordion-toggle{"data-toggle" => "collapse", "data-parent" => "#accordion", :href => "#item_#{act_type.id}"}
+            #{image_tag("doc.png",:size => "20x20")} #{link_to act_type.name, act_type} (#{Inventory.where(:act_type_id => act_type).count})
+            .pull-right
+              = link_to image_tag("edit.png",:size => "20x20"), edit_act_type_path(act_type)
+              = link_to image_tag("destroy.png",:size => "20x20"), act_type_path(act_type), :method => :delete
+        .accordion-body.collapse{:id => "item_#{act_type.id}"}
+          .accordion-inner
+            %table.table.table-bordered.table-condensed.table-hover
+              %thead
+                %tr
+                  %th= Inventory.human_attribute_name(:act_num)
+                  %th= Inventory.human_attribute_name(:inv_num)
+                  %th= Inventory.human_attribute_name(:accept_date)
+              %tbody
+                -inventories = Inventory.where(:act_type_id => act_type).order("inv_num")
+                -inventories.each do |inventory|
+                  %tr
+                    %td=link_to inventory.act_num, inventory
+                    %td= inventory.inv_num
+                    %td=l inventory.accept_date, format: :long
+            -if logged_in? && current_user.admin_inv?
+              %p
+                = link_to new_inventory_path, class: "btn btn-small" do
+                  #{image_tag("add.png",:size => "16x16")} Добавить инвентарь
     =paginate @act_types
 
--if logged_in? && current_user.admin_user?
-  %p
-    = link_to"Новый тип акта", new_act_type_path, class: "btn btn-info"
+  -if logged_in? && current_user.admin_inv?
+    %p
+      = link_to new_act_type_path, class: "btn btn-small" do
+        #{image_tag("add.png",:size => "16x16")} Добавить тип акта

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f4d4f741-1340-4c14-a141-92e58dcd70dc">
+  <data-source source="LOCAL" name="Rails equipment_system: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="41a6f76a-686c-4ab4-8750-ca94d95e0142">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_development</jdbc-url>
     <user-name>ode</user-name>
@@ -13,9 +13,22 @@
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1efe8ae4-ae2a-4a3e-8324-3c34bae8437d">
+  <data-source source="LOCAL" name="Rails equipment_system: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0913cbb8-56fb-4e3a-91e1-61bc84719aba">
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
     <jdbc-url>jdbc:postgresql:EquipmentSystem_test</jdbc-url>
+    <user-name>ode</user-name>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails equipment_system: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2fe4a61e-269d-4250-b94f-abbb51748ba1">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:EquipmentSystem</jdbc-url>
     <user-name>ode</user-name>
     <libraries>
       <library>

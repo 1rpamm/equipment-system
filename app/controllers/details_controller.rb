@@ -8,10 +8,10 @@ class DetailsController < ApplicationController
 
     respond_to do |format|
       format.html {
-        @details = Detail.full_load.order(:id).page(params[:page])
+        @details = Detail.full_load.order(:name).page(params[:page])
       }
       format.json {
-        @details=Detail.where("cast(serial as text) like ?","%#{params[:q]}%").all
+        @details=Detail.where("lower(name) like ? or cast(serial as text) like ?","%#{params[:q]}%","%#{params[:q]}%").all
         render json: @details }
     end
   end

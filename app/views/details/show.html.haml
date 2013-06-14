@@ -1,41 +1,49 @@
 - model_class = Detail
-.page-header
-  %h1=t '.title', :default => model_class.model_name.human
+.span9
+  .page-header
+    %h1=t '.title', :default => model_class.model_name.human
 
-%p
-  %strong= model_class.human_attribute_name(:vendor_id) + ':'
-  %br
-  = @detail.vendor.name
-%p
-  %strong= model_class.human_attribute_name(:device_id) + ':'
-  %br
-  = @detail.device.name
-%p
-  %strong= model_class.human_attribute_name(:subsystem_id) + ':'
-  %br
+  .span2
+    %strong= model_class.human_attribute_name(:vendor_id) + ':'
+  .span8
+    = @detail.vendor.name
+  .span2
+    %strong= model_class.human_attribute_name(:device_id) + ':'
+  .span8
+    = @detail.device.name
   -if @detail.subsystem
-    = @detail.subsystem.name
-%p
-  %strong= model_class.human_attribute_name(:rev) + ':'
-  %br
-  = @detail.rev
-%p
-  %strong= model_class.human_attribute_name(:serial) + ':'
-  %br
-  = @detail.serial
-%p
-  %strong= model_class.human_attribute_name(:accepted_at) + ':'
-  %br
+    .span2
+      %strong= model_class.human_attribute_name(:subsystem_id) + ':'
+    .span8
+      = @detail.subsystem.name
+  .span2
+    %strong= model_class.human_attribute_name(:rev) + ':'
+  .span8
+    = @detail.rev
+  .span2
+    %strong= model_class.human_attribute_name(:serial) + ':'
+  .span8
+    = @detail.serial
   -if @detail.accepted_at
-    =l @detail.accepted_at, format: :long
-%p
-  %strong= model_class.human_attribute_name(:deleted_at) + ':'
-  %br
+    .span2
+      %strong= model_class.human_attribute_name(:accepted_at) + ':'
+    .span8
+      =l @detail.accepted_at, format: :long
   -if @detail.deleted_at
-    =l @detail.deleted_at, format: :long
-
-.form-actions
-  = link_to t('.back', :default => t("helpers.links.back")), details_path, :class => 'btn'
-  -if logged_in? && current_user.admin_user?
-    = link_to t('.edit', :default => t("helpers.links.edit")), edit_detail_path(@detail), :class => 'btn btn-warning'
-    = link_to t('.destroy', :default => t("helpers.links.destroy")), detail_path(@detail), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm")) }, :class => 'btn btn-danger'
+    .span2
+      %strong= model_class.human_attribute_name(:deleted_at) + ':'
+    .span8
+      =l @detail.deleted_at, format: :long
+.span2
+  .form-actions
+    %p
+      = link_to details_path do
+        #{image_tag("back.png",:size => "20x20")} Назад
+    -if logged_in? && current_user.admin_equip?
+      %p
+        = link_to edit_detail_path(@detail) do
+          #{image_tag("edit.png",:size => "20x20")} Редактировать
+      %p
+        = link_to detail_path(@detail), :method => "delete" do
+          #{image_tag("delete.png",:size => "20x20")} Удалить
+.clear

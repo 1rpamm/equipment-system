@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .comment{
+  margin: 5px;
+  position: relative;
   .comment_head {
     font-size: 9pt;
     font-family: 'Monaco','Liberation Mono','Droid Sans Mono','Ubuntu Mono','Lucida Console','Helvetica Neue',monospace;
@@ -10,21 +12,11 @@
     .time {
       bottom: 0;
       color: #999999;
-      //left: 600px;
-      //position: absolute;
-      margin: 0 -8px !important;
-      padding: 0 8px !important;
+      margin: 0 -8px;
+      padding: 0 8px;
       position: absolute;
       right: 8px;
     }
-    //.id {
-    //  bottom: 0;
-    //  color: #999999;
-    //  margin: 0 -8px !important;
-    //  padding: 0 8px !important;
-    //  position: absolute;
-    //  right: 8px;
-    //}
   }
   .comment_body {
     background-color: #efefef;
@@ -43,30 +35,12 @@
       background: rgba(255,255,255,0.6);
     }
   }
-  margin: 5px;
-  position: relative;
-  height: 100px;
+
 }
 
 .clear {
   clear: both;
 }
-
-.equipment_comment {
-  .title {
-    font-size: 14pt !important;
-    padding: 5px 0px;
-  }
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px dotted #BBBBBB;
-  border-radius: 3px 3px 3px 3px;
-  font-family: 'Monaco','Liberation Mono','Droid Sans Mono','Ubuntu Mono','Lucida Console','Helvetica Neue',monospace;
-  font-size: 10pt;
-  line-height: 1.3em;
-  padding: 7px 8px 5px;
-}
-
-
 
 .text_area {
   width: 500px;

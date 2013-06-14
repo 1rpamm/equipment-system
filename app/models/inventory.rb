@@ -13,10 +13,9 @@ class Inventory < ActiveRecord::Base
   validates :accept_date, presence: true
 
   searchable do
-    text    :body
-    integer :act_num, :inv_num
-    #integer :act_type_id
-    time    :accept_date
-    #time    :created_at
+    text    :body, :act_num
+    integer :inv_num
+    integer :act_type_id
+    time    :accept_date, :created_at
   end
 end

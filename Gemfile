@@ -44,6 +44,5 @@ gem 'bcrypt-ruby'
 gem 'sunspot_rails' #форк для rails
 gem 'sunspot_solr'  #сам Solr
 gem 'progress_bar'  #нужен для индексирования
-group :test, :development do #в группу для разработки и тестирования
-  gem 'sunspot-rails-tester' #это нужно для запуска тестов, иначе не работает.                            #...
-end
+
+gem 'ransack'

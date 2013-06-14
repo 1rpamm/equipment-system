@@ -53,6 +53,19 @@ usernames_file=File.new("./db/seed/usernames.txt")
 logins=%w(admin ololow arapova barmin blinov volodin volodina korunkov mahar ostapenko pasko wkolnik silaev sitnikov shavrin slowpoke jesus sidorov ivanov mouse)
 email="@msiu.ru"
 password="qwerty"
+admin=User.create(:login => logins[c-1],
+                  :name => "Cупер-Администратор",
+                  :email => logins[c-1]+email,
+                  :password => password,
+                  :password_confirmation => password,
+                  :admin_user => 1,
+                  :admin_equip => 1,
+                  :admin_inv => 1,
+                  :responsible => 1,
+                  :assistant => 1 )
+admin.save
+print "\rCreating users: #{c} of 20"
+c += 1
 usernames_file.each_line do |username|
   new_user=User.create(:login => logins[c-1],
                        :name => username.strip,
@@ -64,13 +77,6 @@ usernames_file.each_line do |username|
                        :admin_inv => rand(2),
                        :responsible => rand(2),
                        :assistant => rand(2) )
-  if new_user.id==1
-    new_user.admin_user=1
-    new_user.admin_equip=1
-    new_user.admin_inv=1
-    new_user.responsible=1
-    new_user.assistant=1
-  end
   new_user.save
   print "\rCreating users: #{c} of 20"
   c += 1
@@ -117,24 +123,23 @@ print "\n"
 
 # создание деталей
 c = 1
-vendors=Vendor.count
+vendors_count = Vendor.count
 while c <= 500
-  vendor = rand(vendors)+1
-  while Device.where(:vendor_id => vendor).count == 0
-    vendor+=1
-    if vendor >= vendors
-      vendor = 1
-    end
+  offset = rand(vendors_count)
+  while (Vendor.first(:offset => offset).devices) == []
+    offset = rand(vendors_count)
   end
-  devices = Device.where(:vendor_id => vendor)
-  device = devices[rand(devices.count)].id
-  new_detail = Detail.create(:vendor_id => vendor,
-                             :device_id => device,
+  vendor = Vendor.first(:offset => offset)
+  offset=rand(vendor.devices.count)
+  device = vendor.devices.first(:offset => offset)
+  new_detail = Detail.create(:vendor_id => vendor.id,
+                             :device_id => device.id,
                              :rev => (rand(3)+rand).to_s[0..2],
+                             :name => "#{vendor.name} #{device.name}",
                              :serial => rand(9000000) + 1000000)
-  subsystems = Subsystem.where(:device_id => device)
-  if subsystems.count > 0
-    new_detail.subsystem_id = subsystems[rand(subsystems.count)].id
+  if vendor.devices.first(:offset => offset).subsystems != []
+    offset = rand(device.subsystems.count)
+    new_detail.subsystem_id = device.subsystems.first(:offset => offset).id
   end
   new_detail.save!
   print "\rCreating details: #{c} of 500"

@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20130408103847) do
     t.integer  "vendor_id"
     t.integer  "device_id"
     t.integer  "subsystem_id"
+    t.string   "name"
     t.string   "rev"
     t.string   "serial"
     t.datetime "accepted_at"

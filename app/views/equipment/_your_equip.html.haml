@@ -1,9 +1,9 @@
 .span10
-  %table.table.table-condensed.table-hover
+  %table.table.table-bordered.table-condensed.table-hover
     %thead
       %tr
         %th= Equipment.human_attribute_name(:domain_name)
-        %th= Equipment.human_attribute_name(:room_id)
+        %th= "Кабинет"
         %th= Equipment.human_attribute_name(:responsible_id)
         %th= Equipment.human_attribute_name(:inventory_id)
         %th Деталей
@@ -11,7 +11,7 @@
         %th= Equipment.human_attribute_name(:deleted_at)
         %th.actions=t '.actions', :default => t("helpers.actions")
     %tbody
-      - your_equipment = @equipment.where(:responsible_id => current_user.id).order("deleted_at DESC", :domain_name)
+      - your_equipment = @equipment.where(:responsible_id => current_user.id).order("deleted_at DESC, accepted_at DESC, domain_name")
       - your_equipment.each do |equipment|
         %tr.info
           %td= link_to equipment.domain_name, equipment
@@ -27,7 +27,7 @@
             -if equipment.accepted_at && !equipment.deleted_at
               =l equipment.accepted_at, format: :long
             -elsif !equipment.deleted_at
-              .label
+              .label.label-important
                 %center
                   НЕ ПРИНЯТО
           %td

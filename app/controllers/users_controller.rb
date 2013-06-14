@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html {
-        @users = User.order("admin_user DESC, admin_equip DESC, admin_inv DESC, responsible DESC", :login).page(params[:page])
+        @users = User.order("deleted_at DESC, admin_user*10000+admin_equip*1000+admin_inv*100+responsible*10+assistant DESC, login", :login).page(params[:page])
       }
       format.json {
         @users=User.where("name like ? or email like ?","#{params[:q]}%","#{params[:q]}%").all

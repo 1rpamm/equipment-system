@@ -9,7 +9,7 @@ class InventoriesController < ApplicationController
         @inventories = Inventory.full_load.order("accept_date DESC", :act_num, :act_type_id).page(params[:page])
       }
       format.json {
-        @inventories=Inventory.where("act_num like ?","#{params[:q]}%").all
+        @inventories=Inventory.where("cast(inv_num as text) like ? or act_num like ?","%#{params[:q]}%","%#{params[:q]}%").all
         render json: @inventories }
     end
   end
