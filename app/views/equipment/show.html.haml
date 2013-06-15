@@ -25,9 +25,7 @@
     %p
       - @equipment.details.each do |detail|
         #{link_to (image_tag("detail.png",:size => "32x32")), detail}
-        #{detail.vendor.name} > #{detail.device.name}
-        -if detail.subsystem
-          > #{detail.subsystem.name}
+        #{detail.name}
         %br
   .span2
     %strong= model_class.human_attribute_name(:domain_name) + ':'

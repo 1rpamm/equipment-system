@@ -3,7 +3,7 @@
     -if @equipment
       =link_to "Редактровать", edit_equipment_comment_path(@equipment,comment)
       =link_to "Удалить", [@equipment,comment], :confirm => "Вы уверены?", :method => :delete
-    .time=l comment.created_at, :format => :long
+    .time=l comment.updated_at, :format => :long
     -#.id ##{comment.id}
   .comment_body
     .name

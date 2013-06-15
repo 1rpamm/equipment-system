@@ -36,7 +36,7 @@ COPY act_types (id, name) FROM stdin;
 -- Name: act_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ode
 --
 
-SELECT pg_catalog.setval('act_types_id_seq', 14, true);
+SELECT pg_catalog.setval('act_types_id_seq', 15, true);
 
 
 --
@@ -380,9 +380,6 @@ COPY comments (id, body, user_id, equipment_id, created_at, updated_at) FROM std
 334	test comment #334	12	112	2013-06-15 14:50:19.424302	2013-06-15 14:50:19.424302
 335	test comment #335	2	112	2013-06-15 14:50:19.428236	2013-06-15 14:50:19.428236
 336	test comment #336	6	112	2013-06-15 14:50:19.432287	2013-06-15 14:50:19.432287
-337	test comment #337	2	113	2013-06-15 14:50:19.436229	2013-06-15 14:50:19.436229
-338	test comment #338	13	113	2013-06-15 14:50:19.440062	2013-06-15 14:50:19.440062
-339	test comment #339	17	113	2013-06-15 14:50:19.444281	2013-06-15 14:50:19.444281
 340	test comment #340	14	114	2013-06-15 14:50:19.448642	2013-06-15 14:50:19.448642
 341	test comment #341	13	114	2013-06-15 14:50:19.452813	2013-06-15 14:50:19.452813
 342	test comment #342	2	114	2013-06-15 14:50:19.457208	2013-06-15 14:50:19.457208
@@ -494,6 +491,9 @@ COPY comments (id, body, user_id, equipment_id, created_at, updated_at) FROM std
 448	test comment #448	14	150	2013-06-15 14:50:19.955481	2013-06-15 14:50:19.955481
 449	test comment #449	1	150	2013-06-15 14:50:19.960428	2013-06-15 14:50:19.960428
 450	test comment #450	6	150	2013-06-15 14:50:19.965145	2013-06-15 14:50:19.965145
+338	А мне мышка не нравится. Она должна быть черная, под цвет монитора))	13	113	2013-06-15 14:50:19.440062	2013-06-15 15:21:57.549522
+337	Отличный компьтер, всегла за ним работаю! Я написал на нем 4(!) курсовые работы и сейчас пишу диплом.	2	113	2013-06-15 14:50:19.436229	2013-06-15 15:22:26.91476
+339	Ну не знаю, может быть...\r\nМеня вот например все устраивает без всяких НО.\r\n\r\nВидели как наши админы починяют этот комп?\r\nhttp://www.youtube.com/watch?v=vh3tuL_DVsE	17	113	2013-06-15 14:50:19.444281	2013-06-15 15:23:56.485743
 \.
 
 
@@ -509,7 +509,6 @@ SELECT pg_catalog.setval('comments_id_seq', 450, true);
 --
 
 COPY details (id, vendor_id, device_id, subsystem_id, name, rev, serial, accepted_at, deleted_at, created_at, updated_at) FROM stdin;
-1	8	7	\N	Hauppauge computer works Inc. WinTV PVR-350	2.7	9220339	\N	\N	2013-06-15 14:49:58.923403	2013-06-15 14:49:58.923403
 2	38	38	\N	Wired Inc. Butane II (MPEG2 encoder board)	2.3	8088235	\N	\N	2013-06-15 14:49:58.937609	2013-06-15 14:49:58.937609
 3	59	200	\N	LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire]	2.0	7989996	\N	\N	2013-06-15 14:49:58.953109	2013-06-15 14:49:58.953109
 4	46	44	\N	First International Computer, Inc. VA-502 Mainboard	1.2	6731080	\N	\N	2013-06-15 14:49:58.964802	2013-06-15 14:49:58.964802
@@ -673,7 +672,6 @@ COPY details (id, vendor_id, device_id, subsystem_id, name, rev, serial, accepte
 162	4	2	2	PEAK-System Technik GmbH PCAN-PCI CAN-Bus controller	1.3	5260089	\N	\N	2013-06-15 14:50:02.866122	2013-06-15 14:50:02.877817
 163	28	28	\N	IBM Corp. Remote System Administration device [RSA2]	0.6	2360870	\N	\N	2013-06-15 14:50:02.895311	2013-06-15 14:50:02.895311
 164	39	41	\N	AVerMedia Technologies Inc. AVerTV 301	0.7	4544770	\N	\N	2013-06-15 14:50:02.917084	2013-06-15 14:50:02.917084
-165	52	68	\N	ASCII Corporation Trance Vibrator	1.7	4578035	\N	\N	2013-06-15 14:50:02.940209	2013-06-15 14:50:02.940209
 166	10	21	\N	Silicon Image, Inc. (Wrong ID) Ultra ATA/133 IDE RAID CONTROLLER CARD	2.5	8706309	\N	\N	2013-06-15 14:50:02.96286	2013-06-15 14:50:02.96286
 167	54	94	\N	Compaq Computer Corporation Integrated Array	1.0	3355924	\N	\N	2013-06-15 14:50:02.988133	2013-06-15 14:50:02.988133
 168	61	377	468	ATI Technologies Inc 3D Rage IIC AGP	2.0	4808028	\N	\N	2013-06-15 14:50:03.04002	2013-06-15 14:50:03.052057
@@ -884,7 +882,6 @@ COPY details (id, vendor_id, device_id, subsystem_id, name, rev, serial, accepte
 373	53	69	\N	TerraTec Electronic GmbH Cinergy T^2 DVB-T Receiver	1.7	6054873	\N	\N	2013-06-15 14:50:08.104612	2013-06-15 14:50:08.104612
 374	4	2	1	PEAK-System Technik GmbH PCAN-PCI CAN-Bus controller	2.6	2078509	\N	\N	2013-06-15 14:50:08.130575	2013-06-15 14:50:08.143617
 375	39	42	\N	AVerMedia Technologies Inc. AVerTV DVB-T Volar (USB 2.0)	0.4	4643951	\N	\N	2013-06-15 14:50:08.156482	2013-06-15 14:50:08.156482
-376	4	2	1	PEAK-System Technik GmbH PCAN-PCI CAN-Bus controller	0.2	8353077	\N	\N	2013-06-15 14:50:08.189824	2013-06-15 14:50:08.202763
 377	59	176	59	LSI Logic / Symbios Logic 53c1010 66MHz  Ultra3 SCSI Adapter	0.0	2278697	\N	\N	2013-06-15 14:50:08.220385	2013-06-15 14:50:08.233903
 378	46	44	\N	First International Computer, Inc. VA-502 Mainboard	1.8	9690675	\N	\N	2013-06-15 14:50:08.24887	2013-06-15 14:50:08.24887
 379	45	43	\N	AuthenTec [Anchor] AF-S2 FingerLoc Sensor Module	0.7	7579235	\N	\N	2013-06-15 14:50:08.271149	2013-06-15 14:50:08.271149
@@ -1009,6 +1006,9 @@ COPY details (id, vendor_id, device_id, subsystem_id, name, rev, serial, accepte
 498	59	250	245	LSI Logic / Symbios Logic MegaRAID	0.4	8434331	\N	\N	2013-06-15 14:50:11.000524	2013-06-15 14:50:11.013795
 499	59	164	\N	LSI Logic / Symbios Logic 53c815	0.2	5895927	\N	\N	2013-06-15 14:50:11.055877	2013-06-15 14:50:11.055877
 500	37	37	\N	Ubiquiti Networks, Inc. XtremeRange5	1.2	7693198	\N	\N	2013-06-15 14:50:11.074753	2013-06-15 14:50:11.074753
+376	4	2	44	PEAK-System Technik GmbH PCAN-PCI CAN-Bus controller	0.2	8353077	\N	\N	2013-06-15 14:50:08.189824	2013-06-15 15:57:21.229123
+1	8	7	\N	Hauppauge computer works Inc. WinTV PVR-350	2.7	92-20-33-9a-ef	\N	\N	2013-06-15 14:49:58.923403	2013-06-15 15:58:29.589045
+165	52	414	480	ASCII Corporation 3D Rage LT Pro	1.7	4578035	\N	\N	2013-06-15 14:50:02.940209	2013-06-15 16:17:14.181898
 \.
 
 
@@ -2302,7 +2302,6 @@ SELECT pg_catalog.setval('devices_id_seq', 419, true);
 COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, accepted_at, deleted_at, allow_del_at, created_at, updated_at) FROM stdin;
 1	1	7	17	lib 13	\N	\N	2013-06-15 14:50:11.191621	\N	2013-06-15 14:50:11.151464	2013-06-15 14:50:11.196917
 2	20	3	14	fire 4	\N	\N	2013-06-15 14:50:11.230821	\N	2013-06-15 14:50:11.224865	2013-06-15 14:50:11.23247
-3	12	9	13	ghost 1	\N	\N	\N	\N	2013-06-15 14:50:11.240684	2013-06-15 14:50:11.240684
 4	31	10	13	mars 18	\N	2013-06-15 14:50:11.266112	\N	\N	2013-06-15 14:50:11.255673	2013-06-15 14:50:11.269563
 5	8	10	1	mars 5	\N	\N	2013-06-15 14:50:11.328466	\N	2013-06-15 14:50:11.30483	2013-06-15 14:50:11.332152
 6	26	4	6	stone 5	\N	2013-06-15 14:50:11.356783	2013-06-15 14:50:11.357132	\N	2013-06-15 14:50:11.346024	2013-06-15 14:50:11.360348
@@ -2327,7 +2326,6 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 25	25	2	13	gorynich 13	\N	2013-06-15 14:50:12.163568	2013-06-15 14:50:12.163937	\N	2013-06-15 14:50:12.144946	2013-06-15 14:50:12.167285
 26	11	11	14	fire 10	\N	\N	\N	\N	2013-06-15 14:50:12.190895	2013-06-15 14:50:12.190895
 27	37	3	1	stone 23	\N	2013-06-15 14:50:12.249762	\N	\N	2013-06-15 14:50:12.230951	2013-06-15 14:50:12.253447
-28	17	10	6	monster 17	\N	\N	\N	\N	2013-06-15 14:50:12.27303	2013-06-15 14:50:12.27303
 29	14	1	14	mars 17	\N	\N	2013-06-15 14:50:12.34478	\N	2013-06-15 14:50:12.319464	2013-06-15 14:50:12.348373
 30	20	6	13	stone 12	\N	2013-06-15 14:50:12.381754	2013-06-15 14:50:12.382116	\N	2013-06-15 14:50:12.367249	2013-06-15 14:50:12.385592
 31	30	5	14	fire 12	\N	2013-06-15 14:50:12.417674	2013-06-15 14:50:12.418024	\N	2013-06-15 14:50:12.404433	2013-06-15 14:50:12.4213
@@ -2351,7 +2349,6 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 49	20	8	6	fire 6	\N	\N	\N	\N	2013-06-15 14:50:13.279375	2013-06-15 14:50:13.279375
 50	24	4	14	ghost 12	\N	\N	2013-06-15 14:50:13.339289	\N	2013-06-15 14:50:13.322058	2013-06-15 14:50:13.342823
 51	32	8	13	fire 7	\N	2013-06-15 14:50:13.381238	2013-06-15 14:50:13.381427	\N	2013-06-15 14:50:13.369987	2013-06-15 14:50:13.383066
-52	23	6	17	monster 5	\N	\N	\N	\N	2013-06-15 14:50:13.398555	2013-06-15 14:50:13.398555
 53	7	2	6	ice 22	\N	\N	\N	\N	2013-06-15 14:50:13.440664	2013-06-15 14:50:13.440664
 54	36	5	13	stone 1	\N	\N	2013-06-15 14:50:13.519399	\N	2013-06-15 14:50:13.495514	2013-06-15 14:50:13.523087
 55	26	12	2	gorynich 7	\N	2013-06-15 14:50:13.560474	2013-06-15 14:50:13.560868	\N	2013-06-15 14:50:13.544702	2013-06-15 14:50:13.564264
@@ -2374,7 +2371,6 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 72	10	12	6	monster 9	\N	2013-06-15 14:50:14.360338	2013-06-15 14:50:14.360739	\N	2013-06-15 14:50:14.34613	2013-06-15 14:50:14.364157
 73	31	10	11	ghost 20	\N	2013-06-15 14:50:14.4126	\N	\N	2013-06-15 14:50:14.392543	2013-06-15 14:50:14.416109
 74	41	11	17	fire 18	\N	\N	2013-06-15 14:50:14.471295	\N	2013-06-15 14:50:14.448622	2013-06-15 14:50:14.474861
-75	22	7	11	mars 24	\N	\N	\N	\N	2013-06-15 14:50:14.518862	2013-06-15 14:50:14.518862
 76	30	1	17	ghost 9	\N	2013-06-15 14:50:14.595554	2013-06-15 14:50:14.595925	\N	2013-06-15 14:50:14.576859	2013-06-15 14:50:14.599314
 77	25	6	17	stone 22	\N	\N	2013-06-15 14:50:14.638959	\N	2013-06-15 14:50:14.621679	2013-06-15 14:50:14.64251
 78	36	11	2	gorynich 7	\N	2013-06-15 14:50:14.671657	\N	\N	2013-06-15 14:50:14.658888	2013-06-15 14:50:14.675172
@@ -2395,6 +2391,9 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 93	3	4	1	lib 3	\N	\N	2013-06-15 14:50:15.326538	\N	2013-06-15 14:50:15.315393	2013-06-15 14:50:15.330793
 94	9	9	14	mars 15	\N	2013-06-15 14:50:15.374004	2013-06-15 14:50:15.374364	\N	2013-06-15 14:50:15.356199	2013-06-15 14:50:15.378014
 95	4	4	11	stone 2	\N	\N	\N	\N	2013-06-15 14:50:15.404481	2013-06-15 14:50:15.404481
+3	12	9	13	ghost 1	\N	\N	2013-06-15 15:09:46.107865	\N	2013-06-15 14:50:11.240684	2013-06-15 15:09:46.118175
+75	22	7	11	mars 24	\N	2013-06-15 16:54:07.767741	\N	\N	2013-06-15 14:50:14.518862	2013-06-15 16:54:07.769741
+52	23	6	17	monster 5	\N	2013-06-15 16:54:11.671294	\N	\N	2013-06-15 14:50:13.398555	2013-06-15 16:54:11.673354
 96	44	12	11	fire 12	\N	\N	2013-06-15 14:50:15.444827	\N	2013-06-15 14:50:15.43366	2013-06-15 14:50:15.448252
 97	45	3	6	mars 12	\N	2013-06-15 14:50:15.502875	\N	\N	2013-06-15 14:50:15.480789	2013-06-15 14:50:15.506434
 98	26	11	1	stone 13	\N	2013-06-15 14:50:15.542327	\N	\N	2013-06-15 14:50:15.527405	2013-06-15 14:50:15.545867
@@ -2425,7 +2424,6 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 123	49	11	6	monster 18	\N	2013-06-15 14:50:16.710923	2013-06-15 14:50:16.711279	\N	2013-06-15 14:50:16.69967	2013-06-15 14:50:16.714615
 124	38	12	2	ghost 23	\N	2013-06-15 14:50:16.769099	2013-06-15 14:50:16.769449	\N	2013-06-15 14:50:16.746924	2013-06-15 14:50:16.773062
 125	24	1	14	ghost 9	\N	2013-06-15 14:50:16.802093	2013-06-15 14:50:16.802436	\N	2013-06-15 14:50:16.789848	2013-06-15 14:50:16.805701
-126	43	10	13	ghost 12	\N	\N	\N	\N	2013-06-15 14:50:16.826548	2013-06-15 14:50:16.826548
 127	15	11	2	stone 11	\N	2013-06-15 14:50:16.879415	2013-06-15 14:50:16.879612	\N	2013-06-15 14:50:16.866505	2013-06-15 14:50:16.881289
 128	24	9	2	ghost 15	\N	\N	2013-06-15 14:50:16.91605	\N	2013-06-15 14:50:16.897924	2013-06-15 14:50:16.919523
 129	11	2	11	ice 21	\N	2013-06-15 14:50:16.968557	2013-06-15 14:50:16.968901	\N	2013-06-15 14:50:16.948169	2013-06-15 14:50:16.972232
@@ -2440,7 +2438,6 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 138	33	3	2	stone 15	\N	\N	\N	\N	2013-06-15 14:50:17.383279	2013-06-15 14:50:17.383279
 139	17	1	17	ghost 20	\N	\N	\N	\N	2013-06-15 14:50:17.414729	2013-06-15 14:50:17.414729
 140	10	9	2	lib 14	\N	\N	\N	\N	2013-06-15 14:50:17.44572	2013-06-15 14:50:17.44572
-141	5	7	14	gorynich 10	\N	\N	\N	\N	2013-06-15 14:50:17.47855	2013-06-15 14:50:17.47855
 142	36	11	17	ghost 14	\N	2013-06-15 14:50:17.532078	2013-06-15 14:50:17.532437	\N	2013-06-15 14:50:17.515129	2013-06-15 14:50:17.535786
 143	46	6	6	gorynich 9	\N	2013-06-15 14:50:17.593437	2013-06-15 14:50:17.593789	\N	2013-06-15 14:50:17.569942	2013-06-15 14:50:17.59715
 144	42	2	14	monster 20	\N	2013-06-15 14:50:17.640588	\N	\N	2013-06-15 14:50:17.622248	2013-06-15 14:50:17.644092
@@ -2450,6 +2447,9 @@ COPY equipment (id, inventory_id, room_id, responsible_id, domain_name, md5sum, 
 148	10	1	6	lib 20	\N	\N	\N	\N	2013-06-15 14:50:17.781435	2013-06-15 14:50:17.781435
 149	8	1	11	lib 9	\N	\N	\N	\N	2013-06-15 14:50:17.823401	2013-06-15 14:50:17.823401
 150	42	6	2	ghost 1	\N	\N	\N	\N	2013-06-15 14:50:17.891309	2013-06-15 14:50:17.891309
+28	17	10	6	monster 17	\N	2013-06-15 16:54:01.806652	\N	\N	2013-06-15 14:50:12.27303	2013-06-15 16:54:01.809507
+126	43	10	13	ghost 12	\N	2013-06-15 16:54:05.683659	\N	\N	2013-06-15 14:50:16.826548	2013-06-15 16:54:05.685629
+141	5	7	14	gorynich 10	\N	2013-06-15 16:54:09.669294	\N	\N	2013-06-15 14:50:17.47855	2013-06-15 16:54:09.671381
 \.
 
 
@@ -2549,7 +2549,7 @@ COPY rooms (id, name) FROM stdin;
 -- Name: rooms_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ode
 --
 
-SELECT pg_catalog.setval('rooms_id_seq', 12, true);
+SELECT pg_catalog.setval('rooms_id_seq', 13, true);
 
 
 --
@@ -3101,16 +3101,12 @@ SELECT pg_catalog.setval('subsystems_id_seq', 508, true);
 --
 
 COPY users (id, login, name, email, crypted_password, salt, admin_user, admin_equip, admin_inv, responsible, assistant, login_count, last_login_at, created_at, updated_at, deleted_at, remember_me_token, remember_me_token_expires_at) FROM stdin;
-1	admin	Cупер-Администратор	admin@msiu.ru	$2a$10$ee0lXIqURTD2FgnMKIOsK.CNq3is29sPBW6quw8D6wxheFHezkVzm	gGf53kzTcbj3tBNTxbeS	1	1	1	1	1	0	\N	2013-06-15 14:49:50.164861	2013-06-15 14:49:50.164861	\N	\N	\N
-2	ololow	Ололош Петр Вазгенович	ololow@msiu.ru	$2a$10$icN..ZMLqsyRjS0xBo.bd.T/SAqr5KIVfjCzMYC3O4HbqQkpN7Tk.	wKFv44G3bQnxDqpWqmPd	1	1	1	1	1	0	\N	2013-06-15 14:49:50.312277	2013-06-15 14:49:50.312277	\N	\N	\N
-3	arapova	Арапова Анастасия Алексеевна	arapova@msiu.ru	$2a$10$15F2/ZYlYOa/7mqaEoRJfuemk52Iax7i3f9MDuvtFPhRuvAvtT7Ja	siVq2xpRiym4aJqebqs5	0	1	0	0	0	0	\N	2013-06-15 14:49:50.452358	2013-06-15 14:49:50.452358	\N	\N	\N
 4	barmin	Бармин Никита Юрьевич	barmin@msiu.ru	$2a$10$SeBnQHAzYq9OjxEb6hj/PeU6Xek4CbUf1CbPu1QvyALzofv45OWVK	TxZJe5upt5Zn2maEG7wn	0	1	1	0	1	0	\N	2013-06-15 14:49:50.595801	2013-06-15 14:49:50.595801	\N	\N	\N
 5	blinov	Блинов Максим Сергеевич	blinov@msiu.ru	$2a$10$nN0qjtyD0tjJJJUIgQ5G7ujAXSId5.zR3MA8x/.gFziUGW85fIzZa	qQs7sQvMigpjPCSAN1uq	1	0	0	0	0	0	\N	2013-06-15 14:49:50.750926	2013-06-15 14:49:50.750926	\N	\N	\N
 6	volodin	Володин Дмитрий Павлович	volodin@msiu.ru	$2a$10$6/Ug9X3i5ENmVBPGca6bqOXLCxh1EocLzQXbDKLxd5G5kYZ6JrhES	EhqnPF362CighhPmXKqt	0	0	0	1	1	0	\N	2013-06-15 14:49:50.893155	2013-06-15 14:49:50.893155	\N	\N	\N
 7	volodina	Володина Ксения Андреевна	volodina@msiu.ru	$2a$10$dxys2MZRJkDUyQfTox2PtO5sfUOBylOVrpZ9Dzi.wSuDv8l6601G6	yWiprKvMSvK3yDrsVnyY	0	1	1	0	1	0	\N	2013-06-15 14:49:51.042178	2013-06-15 14:49:51.042178	\N	\N	\N
 8	korunkov	Корунков Иван Александрович	korunkov@msiu.ru	$2a$10$8j98dapUYv28dIu4YlKHyuClb.BmvxvuxOFMfp1CmBPMZeoIBGo3u	EyzAYRfAc3iMhKyW7qd5	1	1	0	0	0	0	\N	2013-06-15 14:49:51.195858	2013-06-15 14:49:51.195858	\N	\N	\N
 9	mahar	Махарадзе Константин Бидзинович	mahar@msiu.ru	$2a$10$spotfN4OOlE0pIu1sLg./.SmO9WpRq7aHGiy3OrhHcJc11YeqBq5q	GKnEhwbkyNbWSdLsefkD	0	1	0	0	1	0	\N	2013-06-15 14:49:51.342738	2013-06-15 14:49:51.342738	\N	\N	\N
-10	ostapenko	Остапенко Дмитрий Евгеньевич	ostapenko@msiu.ru	$2a$10$Hqv1QuFYcnL3pWZRPFsqr.yEiW1mi.J5hvgycHG7KjMwnEqZ5hhZa	pw5XGKSdyG23HF5zy8sL	0	0	1	0	0	0	\N	2013-06-15 14:49:51.488821	2013-06-15 14:49:51.488821	\N	\N	\N
 11	pasko	Пасько Дмитрий Анатольевич	pasko@msiu.ru	$2a$10$EU.pbbMRA02ZSaYn3lLEN.ky7bNir.ag1q33hUgAlQsg37zSgoOYm	jhxDmKoBiHtpdsrVopsY	1	1	0	1	0	0	\N	2013-06-15 14:49:51.641751	2013-06-15 14:49:51.641751	\N	\N	\N
 12	wkolnik	Ржавин Тимофей Сергеевич	wkolnik@msiu.ru	$2a$10$UpbHk6a4hPV0eg.pMUEWzeqM5QP4cLcr6NREXItRcVBfit3VOWiGq	peEnixzFQq1Q1RzqEvXq	1	0	0	1	1	0	\N	2013-06-15 14:49:51.786427	2013-06-15 14:49:51.786427	\N	\N	\N
 13	silaev	Силаев Владислав Сергеевич	silaev@msiu.ru	$2a$10$POxYLjdvMDZy1oYE0ILD8eGoFU/BsuXnqUer3oaOmNYg0BDGowTh.	tLzsBCzLGm2PrLNA5utu	1	0	1	1	0	0	\N	2013-06-15 14:49:51.930936	2013-06-15 14:49:51.930936	\N	\N	\N
@@ -3119,8 +3115,12 @@ COPY users (id, login, name, email, crypted_password, salt, admin_user, admin_eq
 16	slowpoke	Некрасов Василий Иванович	slowpoke@msiu.ru	$2a$10$AaIE3hdhrfQac0womH8DCulkWGyqrA2gCfj4SWGC07QIsiTNN7ov2	1baz93kLZKDxfwu2GZ8m	1	0	0	0	0	0	\N	2013-06-15 14:49:52.375994	2013-06-15 14:49:52.375994	\N	\N	\N
 17	jesus	Онипко Константин Петрович	jesus@msiu.ru	$2a$10$nUOeZb2AwjKp8ueQ6ZGt3uAP/sL13JHpDQFu6xhZYCUFwEkcybe5G	ZKR5gEh391EVv7Ux8dUp	0	0	0	1	0	0	\N	2013-06-15 14:49:52.522503	2013-06-15 14:49:52.522503	\N	\N	\N
 18	sidorov	Сидоров Евгений Вальрьянович	sidorov@msiu.ru	$2a$10$vgKHeDce9.3lJ.bXxemABu9KVujaJ9mwu7oQCupc3np1GZni/Z/9.	w4oYwovLECytx41mpErK	0	0	1	0	1	0	\N	2013-06-15 14:49:52.665142	2013-06-15 14:49:52.665142	\N	\N	\N
-19	ivanov	Иванов Сидор Константинович	ivanov@msiu.ru	$2a$10$BgMGjloKBeXxd5fbbk6xxOURncOoY2z/TFfy6vsDVWZgCDrl4yJi6	jYiw1RyYJdUnSEjPvHCb	1	0	0	0	0	0	\N	2013-06-15 14:49:52.824375	2013-06-15 14:49:52.824375	\N	\N	\N
 20	mouse	Мышь Мила Ивановна	mouse@msiu.ru	$2a$10$YpbyeGzShBO51S.LMARHx.47qPktqroaTkrm7MXERX04d1.pHaZOO	6zspMWfaRt8rQhzAaKyw	0	1	1	0	0	0	\N	2013-06-15 14:49:52.96863	2013-06-15 14:49:52.96863	\N	\N	\N
+10	ostapenko	Остапенко Дмитрий Евгеньевич	ostapenko@msiu.ru	$2a$10$Hqv1QuFYcnL3pWZRPFsqr.yEiW1mi.J5hvgycHG7KjMwnEqZ5hhZa	pw5XGKSdyG23HF5zy8sL	0	0	1	0	0	0	\N	2013-06-15 14:49:51.488821	2013-06-15 18:08:33.418838	\N	\N	\N
+2	ololow	Ололош Петр Вазгенович	ololow@msiu.ru	$2a$10$icN..ZMLqsyRjS0xBo.bd.T/SAqr5KIVfjCzMYC3O4HbqQkpN7Tk.	wKFv44G3bQnxDqpWqmPd	1	1	1	1	1	2	2013-06-15 15:03:30.851517	2013-06-15 14:49:50.312277	2013-06-15 15:03:58.976568	\N	\N	\N
+1	admin	Cупер-Администратор	admin@msiu.ru	$2a$10$ee0lXIqURTD2FgnMKIOsK.CNq3is29sPBW6quw8D6wxheFHezkVzm	gGf53kzTcbj3tBNTxbeS	1	1	1	1	1	1	2013-06-15 15:04:04.696729	2013-06-15 14:49:50.164861	2013-06-15 15:04:04.700458	\N	sfHxYAAvr52zppsPrYD5	2013-06-22 15:04:04.689661
+3	arapova	Арапова Анастасия Алексеевна	arapova@msiu.ru	$2a$10$15F2/ZYlYOa/7mqaEoRJfuemk52Iax7i3f9MDuvtFPhRuvAvtT7Ja	siVq2xpRiym4aJqebqs5	0	1	0	0	0	0	\N	2013-06-15 14:49:50.452358	2013-06-15 17:03:37.91713	\N	\N	\N
+19	ivanov 1	Иванов Сидор Константинович	ivanov@msiu.ru	$2a$10$BgMGjloKBeXxd5fbbk6xxOURncOoY2z/TFfy6vsDVWZgCDrl4yJi6	jYiw1RyYJdUnSEjPvHCb	1	0	0	0	0	0	\N	2013-06-15 14:49:52.824375	2013-06-15 17:51:48.035081	2013-06-15 17:03:24.749226	\N	\N
 \.
 
 
@@ -3477,6 +3477,12 @@ COPY versions (id, item_type, item_id, event, whodunnit, object, created_at) FRO
 263	Equipment	148	create	\N	\N	2013-06-15 14:50:17.784417
 264	Equipment	149	create	\N	\N	2013-06-15 14:50:17.826595
 265	Equipment	150	create	\N	\N	2013-06-15 14:50:17.918656
+266	Equipment	3	update	1	---\ninventory_id: 12\nroom_id: 9\nresponsible_id: 13\ndomain_name: ghost 1\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:11.240684000 Z\nupdated_at: 2013-06-15 14:50:11.240684000 Z\nid: 3\n	2013-06-15 15:09:46.119721
+267	Equipment	28	update	1	---\ninventory_id: 17\nroom_id: 10\nresponsible_id: 6\ndomain_name: monster 17\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:12.273030000 Z\nupdated_at: 2013-06-15 14:50:12.273030000 Z\nid: 28\n	2013-06-15 16:54:01.81046
+268	Equipment	126	update	1	---\ninventory_id: 43\nroom_id: 10\nresponsible_id: 13\ndomain_name: ghost 12\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:16.826548000 Z\nupdated_at: 2013-06-15 14:50:16.826548000 Z\nid: 126\n	2013-06-15 16:54:05.686416
+269	Equipment	75	update	1	---\ninventory_id: 22\nroom_id: 7\nresponsible_id: 11\ndomain_name: mars 24\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:14.518862000 Z\nupdated_at: 2013-06-15 14:50:14.518862000 Z\nid: 75\n	2013-06-15 16:54:07.770601
+270	Equipment	141	update	1	---\ninventory_id: 5\nroom_id: 7\nresponsible_id: 14\ndomain_name: gorynich 10\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:17.478550000 Z\nupdated_at: 2013-06-15 14:50:17.478550000 Z\nid: 141\n	2013-06-15 16:54:09.672275
+271	Equipment	52	update	1	---\ninventory_id: 23\nroom_id: 6\nresponsible_id: 17\ndomain_name: monster 5\nmd5sum: \naccepted_at: \ndeleted_at: \nallow_del_at: \ncreated_at: 2013-06-15 14:50:13.398555000 Z\nupdated_at: 2013-06-15 14:50:13.398555000 Z\nid: 52\n	2013-06-15 16:54:11.674304
 \.
 
 
@@ -3484,7 +3490,7 @@ COPY versions (id, item_type, item_id, event, whodunnit, object, created_at) FRO
 -- Name: versions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ode
 --
 
-SELECT pg_catalog.setval('versions_id_seq', 265, true);
+SELECT pg_catalog.setval('versions_id_seq', 271, true);
 
 
 --

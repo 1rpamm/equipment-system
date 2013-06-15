@@ -158,7 +158,12 @@ class EquipmentController < ApplicationController
                   :italic => "#{Rails.root}/app/assets/fonts/verdanai.ttf",
                   :normal  => "#{Rails.root}/app/assets/fonts/verdana.ttf" })
           font font, :size => 10
-          text "<b>МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ИНДУСТРИАЛЬНЫЙ УНИВЕРСИТЕТ</b>", :size => 13, :align => :center, :inline_format => true
+          text "МИНИСТЕРСТВО ОБОРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ", :size => 12, :align => :center, :inline_format => true
+          text "<b>Федеральное государственное бюджетное образовательное</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>учреждение высшего профессионального образования «Московский</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>государственный индустриальный университет»</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>(ФГБОУ ВПО «МГИУ»)</b>", :size => 12, :align => :center, :inline_format => true
+          move_down 15
           text "Система учета компьютерного и сетевого оборудования", :size => 12, :align => :center
           move_down 20
           text "<b>Оборудование:</b> #{equipment.domain_name}", :inline_format => true
@@ -223,7 +228,12 @@ class EquipmentController < ApplicationController
                   :italic => "#{Rails.root}/app/assets/fonts/verdanai.ttf",
                   :normal  => "#{Rails.root}/app/assets/fonts/verdana.ttf" })
           font font, :size => 10
-          text "<b>МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ИНДУСТРИАЛЬНЫЙ УНИВЕРСИТЕТ</b>", :size => 13, :align => :center, :inline_format => true
+          text "МИНИСТЕРСТВО ОБОРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ", :size => 12, :align => :center, :inline_format => true
+          text "<b>Федеральное государственное бюджетное образовательное</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>учреждение высшего профессионального образования «Московский</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>государственный индустриальный университет»</b>", :size => 12, :align => :center, :inline_format => true
+          text "<b>(ФГБОУ ВПО «МГИУ»)</b>", :size => 12, :align => :center, :inline_format => true
+          move_down 15
           text "Система учета компьютерного и сетевого оборудования", :size => 12, :align => :center
           text "Cписок оборудования пользователя #{user.name}", :size => 12, :align => :center
           move_down 20
