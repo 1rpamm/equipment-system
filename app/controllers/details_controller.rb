@@ -8,10 +8,10 @@ class DetailsController < ApplicationController
 
     respond_to do |format|
       format.html {
-        @details = Detail.full_load.order(:name).page(params[:page])
+        @details = Detail.full_load.order(:id).page(params[:page])
       }
       format.json {
-        @details=Detail.where("lower(name) like ? or cast(serial as text) like ?","%#{params[:q]}%","%#{params[:q]}%").all
+        @details=Detail.where("lower(name) like ? or cast(serial as text) like ?","%#{params[:q]}%", "%#{params[:q]}%").all
         render json: @details }
     end
   end
@@ -47,7 +47,7 @@ class DetailsController < ApplicationController
   # POST /details.json
   def create
     @detail = Detail.new(params[:detail])
-
+    @detail.name = "#{@detail.vendor.name} #{@detail.device.name}"
     respond_to do |format|
       if @detail.save
         format.html { redirect_to @detail, notice: 'Деталь успешно создана.' }
@@ -63,9 +63,11 @@ class DetailsController < ApplicationController
   # PUT /details/1.json
   def update
     @detail = Detail.find(params[:id])
-
+    @detail.name = "#{@detail.vendor.name} #{@detail.device.name}"
     respond_to do |format|
       if @detail.update_attributes(params[:detail])
+        @detail.name = "#{@detail.vendor.name} #{@detail.device.name}"
+        @detail.save
         format.html { redirect_to @detail, notice: 'Данные детали успешно обновлены.' }
         format.json { head :no_content }
       else

@@ -45,4 +45,4 @@ gem 'sunspot_rails' #форк для rails
 gem 'sunspot_solr'  #сам Solr
 gem 'progress_bar'  #нужен для индексирования
 
-gem 'ransack'
+#gem 'ransack'

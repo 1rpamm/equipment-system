@@ -149,11 +149,12 @@ print "\n"
 
 # создание оборудования
 c = 1
+users = User.where(:responsible => 1)
 while c <= 150
   host=%w(mars stone fire ice monster gorynich ghost lib)
-  responsible = User.order("random()").limit(1).first
-  room = Room.order("random()").limit(1).first
-  inventory = Inventory.order("random()").limit(1).first
+  responsible = users.order("random()").first!
+  room = Room.order("random()").first!
+  inventory = Inventory.order("random()").first!
   details_count = rand(10)+1
   details = []
   details_count.times do

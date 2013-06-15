@@ -18,13 +18,15 @@
                   %th= Inventory.human_attribute_name(:act_num)
                   %th= Inventory.human_attribute_name(:inv_num)
                   %th= Inventory.human_attribute_name(:accept_date)
+                  %th Комментарий
               %tbody
                 -inventories = Inventory.where(:act_type_id => act_type).order("inv_num")
                 -inventories.each do |inventory|
-                  %tr
+                  %tr.info
                     %td=link_to inventory.act_num, inventory
                     %td= inventory.inv_num
                     %td=l inventory.accept_date, format: :long
+                    %td= inventory.body
             -if logged_in? && current_user.admin_inv?
               %p
                 = link_to new_inventory_path, class: "btn btn-small" do

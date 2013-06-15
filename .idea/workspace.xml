@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2906bce1-d9a3-4672-8f15-1265f020ab0f" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/rails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/sunspot.yml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/1/admin.pdf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/100/ice 3.pdf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/104/mars 6.pdf" afterPath="" />
@@ -16,316 +15,69 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/91/lib 8.pdf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/user12/wkolnik.pdf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/reports/user2/ololow.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/admin-extra.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/elevate.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/mapping-ISOLatin1Accent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/protwords.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/schema.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/scripts.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/solrconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/spellings.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/stopwords.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/synonyms.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_13.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_14.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_15_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_16.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_17.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_18_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_19.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1a.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1b.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1v_3.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1w.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1y.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1z.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_26.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_27.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_28.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_29.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2a.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2b.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3m_3.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3n.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3q.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_3s.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_d_6.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_e.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_f.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_g.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_h.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_i.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_1d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_20" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_2c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_3r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_k" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/write.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/spellchecker/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/spellchecker/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2i.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2j.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2k.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2l.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2m.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2n.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_2s" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/start.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reports/user17/jesus.pdf" afterPath="$PROJECT_DIR$/public/reports/user17/jesus.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reports/user10/ostapenko.pdf" afterPath="$PROJECT_DIR$/public/reports/user10/ostapenko.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130221091924_create_details.rb" afterPath="$PROJECT_DIR$/db/migrate/20130221091924_create_details.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.haml" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/detail.rb" afterPath="$PROJECT_DIR$/app/models/detail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/details_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/details_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/equipment.rb" afterPath="$PROJECT_DIR$/app/models/equipment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/act_types/index.html.haml" afterPath="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/details/index.html.haml" afterPath="$PROJECT_DIR$/app/views/details/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/index.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventories/index.html.haml" afterPath="$PROJECT_DIR$/app/views/inventories/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rooms/index.html.haml" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/index.html.haml" afterPath="$PROJECT_DIR$/app/views/search/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inventories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inventories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/inventory.rb" afterPath="$PROJECT_DIR$/app/models/inventory.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/room.rb" afterPath="$PROJECT_DIR$/app/models/room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/rooms.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rooms.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/details/show.html.haml" afterPath="$PROJECT_DIR$/app/views/details/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/show.html.haml" afterPath="$PROJECT_DIR$/app/views/equipment/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventories/show.html.haml" afterPath="$PROJECT_DIR$/app/views/inventories/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.haml" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seed/usernames.txt" afterPath="$PROJECT_DIR$/db/seed/usernames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="equipment_system.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371205852181" ignored="false" />
-    <file path="/seeds.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371218696938" ignored="false" />
-    <file path="/index.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371237682824" ignored="false" />
+    <file path="/seeds.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371307682359" ignored="false" />
+    <file path="/index.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371306744547" ignored="false" />
     <file path="/application.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1370850787219" ignored="false" />
     <file path="/show.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371234389094" ignored="false" />
     <file path="/Dummy.txt" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371222903633" ignored="false" />
@@ -357,7 +109,7 @@
     <file path="/_deleted_equip.html.haml" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371119280341" ignored="false" />
     <file path="/equipment.js.coffee" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371238361019" ignored="false" />
     <file path="/users_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371222285081" ignored="false" />
-    <file path="/details_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371232440325" ignored="false" />
+    <file path="/details_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371306538831" ignored="false" />
     <file path="/20130221091924_create_details.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371214609022" ignored="false" />
     <file path="/inventories_controller.rb" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371220042677" ignored="false" />
     <file path="/rooms.css.scss" changelist="2906bce1-d9a3-4672-8f15-1265f020ab0f" time="1371229847435" ignored="false" />
@@ -395,37 +147,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="883" selection-end="896" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="23" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_accepted_equip.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_deleted_equip.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_new_equip.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="42" selection-start="438" selection-end="438" vertical-scroll-proportion="-6.25">
+            <state line="28" column="39" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
@@ -458,10 +192,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="act_types_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="act_types_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/act_types_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.10215664">
+            <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -471,6 +205,24 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/equipment_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/details_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="20" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="150" column="5" selection-start="4845" selection-end="4845" vertical-scroll-proportion="0.42565265">
               <folding />
             </state>
           </provider>
@@ -494,22 +246,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/details_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/details/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/details/show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/details.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/inventories/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/inventories/index.html.haml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/equipment/_new_equip.html.haml" />
         <option value="$PROJECT_DIR$/app/views/equipment/_deleted_equip.html.haml" />
         <option value="$PROJECT_DIR$/app/views/equipment/_accepted_equip.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/equipment_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/act_types_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/details_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/act_types/index.html.haml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -1076,30 +828,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/inventories/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="504" selection-end="544" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="1164" selection-end="1335" vertical-scroll-proportion="-15.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inventories/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.443686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="12" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1108,7 +839,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1143,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/equipment.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
@@ -1171,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/equipment_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/equipment/_your_equip.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="-2.5">
@@ -1187,7 +904,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/act_types_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.10215664">
+        <state line="6" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/equipment_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/details_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="20" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/act_types/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="39" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="883" selection-end="896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="5" selection-start="4845" selection-end="4845" vertical-scroll-proportion="0.42565265">
           <folding />
         </state>
       </provider>
