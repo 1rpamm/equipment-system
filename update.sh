@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
-COMMIT="search installed" #~($TIMESTAMP)"
+#~TIMESTAMP=$(date +"%Y\%m\%d %H:%M:%S")
+#~COMMIT="search installed" #~($TIMESTAMP)"
 
 echo -n "Commit > "
 read commit
@@ -13,7 +13,8 @@ read commit
 #~ git push -u origin master
 
 git add .
-git rm -rf tmp/
-git rm -rf log/
+git status
+echo -n "Commit > "
+read commit
 git commit -m "$commit"
-git push --force --progress origin master
+git push origin master
